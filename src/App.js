@@ -1,3 +1,4 @@
+import Hero from "./components/Hero";
 import "./App.scss";
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
           <div className="contactBtn">Contact Us</div>
         </a>
       </div>
+  
+  <Hero />
     </div>
   );
 }
