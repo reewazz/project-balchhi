@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 410px;
+
+  .logo img {
+    height: 10vh;
+    width: 7vw;
+  }
+  .mid {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+  .contactBtn {
+    display: flex;
+    align-items: center;
+    background: orangered;
+    border-radius: 50px;
+    padding: 6px 30px;
+    color: white;
+    font-weight: bold;
+  }
+  a {
+    text-decoration: none;
+    text-align: center;
+  }
+}
