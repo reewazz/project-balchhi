@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.hero__container {
+  display: flex;
+  height: 50vh;
+  width: 70vw;
+  margin: 50px auto;
+  gap: 70px;
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    text-align: left;
+
+    button {
+      display: flex;
+      background: transparent;
+      border: none;
+      text-align: left;
+      align-items: center;
+      cursor: pointer;
+      gap: 5px;
+      font-size: 1rem;
+
+      a{
+          .icon {
+              font-size: 2rem;
+          }
+      }
+
+    }
+  }
+
+  img {
+    height: 50vh;
+    width: 50vw;
+  }
+}
