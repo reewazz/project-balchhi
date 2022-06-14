@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Hero from "./components/Hero";
-import "./App.scss";
+import "./app.scss";
 function App() {
   const [toggleState, settoggleState] = useState(1);
 
