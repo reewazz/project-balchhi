@@ -7,23 +7,21 @@
 }
 
 .nav {
-  margin: 0 50px;
   display: flex;
   align-items: center;
+  margin: 0px 20px;
+  justify-content: space-around;
   font-size: 18px;
-  gap: 100px;
 
   .logo img {
     height: 12vh;
     width: 7vw;
-    margin-left: 115px;
   }
   .mid {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 40px;
     font-weight: bold;
-    margin-left: 60px;
 
     .active {
       transition: all 0.1s ease 0s;
@@ -45,6 +43,7 @@
     padding: 6px 25px;
     color: white;
     font-weight: bold;
+    margin-right: 150px;
   }
   a {
     text-decoration: none;
@@ -55,9 +54,10 @@
 .hero__container {
   display: flex;
   height: 50vh;
-  width: 90vw;
-  margin: 50px;
-  gap: 110px;
+  width: 80vw;
+  margin: 30px;
+  gap: 100px;
+  font-size: 20px;
 
   .about {
     margin-left: 100px;
@@ -65,8 +65,7 @@
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    text-align: left;
-    width: 30vw;
+    width: 40vw;
 
     button {
       display: flex;
