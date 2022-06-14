@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+<<<<<<< Updated upstream
 a {
   text-decoration: none;
   color: #000;
@@ -15,6 +16,14 @@ a {
   width: 70vw;
   margin: 50px auto;
   gap: 70px;
+=======
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 410px;
+  justify-content: space-around; 
+>>>>>>> Stashed changes
 
   .about {
     display: flex;
@@ -47,3 +56,4 @@ a {
     width: 50vw;
   }
 }
+
