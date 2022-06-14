@@ -1,27 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }
-
 .nav {
   display: flex;
   align-items: center;
   margin: 0px 20px;
-  justify-content: space-around;
-  font-size: 18px;
+  justify-content: space-between;
 
   .logo img {
     height: 12vh;
+    height: 10vh;
     width: 7vw;
   }
   .mid {
     display: flex;
     align-items: center;
-    gap: 40px;
     font-weight: bold;
+    gap: 35px;
 
     .active {
       transition: all 0.1s ease 0s;
@@ -41,6 +38,7 @@
     background: orangered;
     border-radius: 50px;
     padding: 6px 25px;
+    padding: 6px 30px;
     color: white;
     font-weight: bold;
     margin-right: 150px;
