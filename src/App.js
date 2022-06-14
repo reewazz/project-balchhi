@@ -1,6 +1,12 @@
+import { useState } from "react";
 import Hero from "./components/Hero";
 import "./App.scss";
 function App() {
+  const [toggleState, settoggleState] = useState(1);
+
+  const toggleMode = (index) => {
+    settoggleState(index);
+  };
   return (
     <div className="App">
       <div className="nav">
@@ -15,16 +21,36 @@ function App() {
         </div>
         <div className="mid">
           <a href="#">
-            <div>Home</div>
+            <div
+              className={toggleState === 1 ? "btn active" : "btn"}
+              onClick={() => toggleMode(1)}
+            >
+              Home
+            </div>
           </a>
           <a href="#">
-            <div>Service</div>
+            <div
+              className={toggleState === 2 ? "btn active" : "btn"}
+              onClick={() => toggleMode(2)}
+            >
+              Service
+            </div>
           </a>
           <a href="#">
-            <div>About Us</div>
+            <div
+              className={toggleState === 3 ? "btn active" : "btn"}
+              onClick={() => toggleMode(3)}
+            >
+              About Us
+            </div>
           </a>
           <a href="#">
-            <div>Contact</div>
+            <div
+              className={toggleState === 4 ? "btn active" : "btn"}
+              onClick={() => toggleMode(4)}
+            >
+              Contact
+            </div>
           </a>
         </div>
 
@@ -32,8 +58,8 @@ function App() {
           <div className="contactBtn">Contact Us</div>
         </a>
       </div>
-  
-  <Hero />
+
+      <Hero />
     </div>
   );
 }
