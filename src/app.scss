@@ -3,88 +3,93 @@
   padding: 0;
   box-sizing: border-box;
 }
-.nav {
-  display: flex;
-  align-items: center;
-  margin: 0px 20px;
-  justify-content: space-between;
+body {
+  margin: 0 150px;
 
-  .logo img {
-    height: 12vh;
-    height: 10vh;
-    width: 7vw;
-  }
-  .mid {
+  .nav {
     display: flex;
     align-items: center;
-    font-weight: bold;
-    gap: 35px;
+    justify-content: space-between;
+    // margin: 0 115px;
 
-    .active {
-      transition: all 0.1s ease 0s;
-      border-bottom: 3px solid orangered;
+    .logo img {
+      height: 12vh;
+      height: 10vh;
+      width: 7vw;
+    }
+    .mid {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      gap: 55px;
+
+      .active {
+        transition: all 0.1s ease 0s;
+        border-bottom: 3px solid orangered;
+      }
+      a {
+        text-decoration: none;
+        border-radius: 10px;
+        color: #000;
+        padding: 6px 10px;
+        cursor: pointer;
+      }
+    }
+    .contactBtn {
+      display: flex;
+      align-items: center;
+      background: orangered;
+      border-radius: 50px;
+      padding: 6px 25px;
+      padding: 6px 30px;
+      color: white;
+      font-weight: bold;
+      margin-right: 10px;
     }
     a {
       text-decoration: none;
-      border-radius: 10px;
-      color: #000;
-      padding: 6px 10px;
+      text-align: center;
       cursor: pointer;
     }
   }
-  .contactBtn {
+  .hero__container {
     display: flex;
-    align-items: center;
-    background: orangered;
-    border-radius: 50px;
-    padding: 6px 25px;
-    padding: 6px 30px;
-    color: white;
-    font-weight: bold;
-    margin-right: 150px;
-  }
-  a {
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-  }
-}
-.hero__container {
-  display: flex;
-  height: 50vh;
-  width: 80vw;
-  margin: 30px;
-  gap: 100px;
-  font-size: 20px;
+    justify-content: space-between;
+    // height: 50vh;
+    // width: 80vw;
+    margin: 10px 10px;
+    gap: 100px;
+    font-size: 20px;
 
-  .about {
-    margin-left: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-    width: 40vw;
-
-    button {
+    .about {
+      // margin-left: 100px;
       display: flex;
-      background: transparent;
-      border: none;
-      text-align: left;
-      align-items: center;
-      cursor: pointer;
-      gap: 5px;
-      font-size: 1rem;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      width: 40vw;
 
-      a {
-        .icon {
-          font-size: 2rem;
+      button {
+        display: flex;
+        background: transparent;
+        border: none;
+        text-align: left;
+        align-items: center;
+        cursor: pointer;
+        gap: 5px;
+        font-size: 1rem;
+
+        a {
+          .icon {
+            font-size: 2rem;
+          }
         }
       }
     }
-  }
 
-  img {
-    height: 60vh;
-    width: 33vw;
+    img {
+      height: 60vh;
+      width: 33vw;
+    }
   }
 }

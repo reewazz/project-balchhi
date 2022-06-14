@@ -53,7 +53,6 @@ function App() {
             </div>
           </a>
         </div>
-
         <a href="#">
           <div className="contactBtn">Contact Us</div>
         </a>
