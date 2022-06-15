@@ -13,7 +13,7 @@ function Hero() {
           voluptatem cupiditate.
         </p>
         <button>
-          <a href="https://www.youtube.com/watch?v=wTULrEWmNqs" target={"_blank"}>
+          <a href="https://www.youtube.com/watch?v=wTULrEWmNqs" target={"_blank"} rel="noreferrer">
             <PlayCircleIcon className="icon" />
           </a>
           Watch video
