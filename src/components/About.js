@@ -15,7 +15,6 @@ export default function About() {
           <h1>
             <b>About</b>
             <span>
-              {" "}
               <b>Us</b>
             </span>
           </h1>
