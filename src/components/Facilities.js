@@ -8,7 +8,7 @@ import {
 
 const Facilities = () => {
   return (
-    <div className="facilites__container">
+    <div className="facilities__container">
       <div className="about">
         <h3>Our <span className="span">Facilities</span> for you</h3>
         <p>
@@ -20,31 +20,31 @@ const Facilities = () => {
       </div>
       <div className="facilities">
         <div>
-          <WifiFillIcon />
+          <WifiFillIcon className="icon" />
           <p>Free Wifi</p>
         </div>
         <div>
-          <BreakfastDining />
+          <BreakfastDining className="icon"/>
           <p>Breakfast</p>
         </div>
         <div>
-          <LocalParking />
+          <LocalParking className="icon"/>
           <p>Parking</p>
         </div>
         <div>
-          <WorkOutline />
+          <WorkOutline className="icon"/>
           <p>Working Space</p>
         </div>
         <div>
-          <i className="fa-solid fa-bolt-lightning"></i>
+          <i className="fa-solid fa-bolt-lightning icon"></i>
           <p>24hr electricity</p>
         </div>
         <div>
-          <i className="fa-solid fa-person-swimming"></i>
+          <i className="fa-solid fa-person-swimming icon"></i>
           <p>Swimming Pool</p>
         </div>
         <div>
-          <i className="fa-solid fa-utensils"></i>
+          <i className="fa-solid fa-utensils icon"></i>
           <p>Dinner</p>
         </div>
       </div>
