@@ -1,5 +1,4 @@
 import React from "react";
-// import WifiFillIcon from "remixicon-react/WifiFillIcon";
 import {
   BreakfastDining,
   LocalParking,
