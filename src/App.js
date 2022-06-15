@@ -1,18 +1,25 @@
-import React from "react";
 import Hero from "./components/Hero";
 import Facilities from "./components/Facilities";
-import "./App.scss";
 import Navbar from "./components/Navbar";
+import "./App.scss";
 import About from "./components/About";
+import Testimonials from "./components/Testimonials/Testimonials";
+
+
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Navbar />
       <Hero />
       <Facilities />
       <About />
-    </div>
+ 
+      <h1 style={{ textAlign: "center" }}>
+        What our <span style={{ color: "orangered" }}>Customer</span> say!
+      </h1>
+      <Testimonials />
+    </>
   );
 }
 
