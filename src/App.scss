@@ -132,6 +132,7 @@ body {
       }
     }
 
+
     .facilities {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -186,4 +187,36 @@ body {
       }
     }
   }
+  .about_container {
+    display: flex;
+    gap: 40px;
+    margin: 50px 0;
+    padding: 30px 50px;
+
+    .image img {
+      height: 52vh;
+      width: 35vw;
+      object-fit: contain;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      span {
+        color: orangered;
+      }
+      button {
+        background: orangered;
+        border: none;
+        color: #fff;
+        width: 150px;
+        // padding: 10px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
 }

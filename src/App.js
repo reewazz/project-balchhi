@@ -5,8 +5,6 @@ import "./App.scss";
 import About from "./components/About";
 import Testimonials from "./components/Testimonials/Testimonials";
 
-
-
 function App() {
   return (
     <>
@@ -14,7 +12,7 @@ function App() {
       <Hero />
       <Facilities />
       <About />
- 
+
       <h1 style={{ textAlign: "center" }}>
         What our <span style={{ color: "orangered" }}>Customer</span> say!
       </h1>
