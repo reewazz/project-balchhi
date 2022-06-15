@@ -157,5 +157,33 @@ body {
       }
     }
   }
-  
+  .Testimonials__container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+
+    .testimonial{
+      display: flex;
+      flex-direction: column;
+      margin: 50px;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      gap: 10px;
+      background: #eeeeee;
+      cursor: pointer;
+
+      &:hover {
+        background: #f3f3f5;
+        transform: scale(1.1);
+      }
+
+      img {
+        height:12vh;
+        width: 12vh;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
 }

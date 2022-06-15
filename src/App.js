@@ -10,8 +10,8 @@ function App() {
       <Navbar />
       <Hero />
       <Facilities />
-      <h1>
-        What out <span style={{ color: "orangered" }}>Customer</span> say!
+      <h1 style={{ textAlign: "center" }}>
+        What our <span style={{ color: "orangered" }}>Customer</span> say!
       </h1>
       <Testimonials />
     </>
