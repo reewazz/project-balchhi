@@ -1,41 +1,162 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }
-
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 410px;
-
-  .logo img {
-    height: 10vh;
-    width: 7vw;
-  }
-  .mid {
+body {
+  margin: 0 150px;
+  background-color: #F3F3F5;
+  .nav {
     display: flex;
     align-items: center;
-    gap: 35px;
+    justify-content: space-between;
+    width: inherit;
 
+    .logo img {
+      height: 10vh;
+      width: 5vw;
+      background: transparent;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .mid {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      gap: 55px;
+      transition: all 0.1s ease 0s;
+
+      .active {
+        border-bottom: 3px solid orangered;
+      }
+      a {
+        text-decoration: none;
+        border-radius: 10px;
+        color: #000;
+        padding: 6px 10px;
+        cursor: pointer;
+      }
+    }
+    .contactBtn {
+      display: flex;
+      align-items: center;
+      background: orangered;
+      border-radius: 50px;
+      padding: 6px 25px;
+      padding: 6px 30px;
+      color: white;
+      font-weight: bold;
+      margin-right: 10px;
+    }
     a {
       text-decoration: none;
-      color: #000;
+      text-align: center;
+      cursor: pointer;
+    }
+// import "./App.scss"
+  }
+  .hero__container {
+    display: flex;
+    justify-content: space-between;
+    // height: 50vh;
+    // width: 80vw;
+    background-color: #F3F3F5;
+    margin: 10px 10px;
+    gap: 100px;
+    font-size: 20px;
+    
+    .about {
+      padding:0 50px ;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      width: 40vw;
+
+      button {
+        display: flex;
+        background: transparent;
+        border: none;
+        text-align: left;
+        align-items: center;
+        cursor: pointer;
+        gap: 5px;
+        font-size: 1rem;
+
+        a {
+          .icon {
+            font-size: 2rem;
+            color: orangered;
+          }
+        }
+      }
+    }
+
+    img {
+      height: 60vh;
+      width: 33vw;
     }
   }
-  .contactBtn {
+
+  .facilities__container {
     display: flex;
-    align-items: center;
-    background: orangered;
-    border-radius: 50px;
-    padding: 6px 30px;
-    color: white;
-    font-weight: bold;
-  }
-  a {
-    text-decoration: none;
-    text-align: center;
+    gap: 150px;
+    background: #F3F3F5;
+    margin: 50px 0;
+    padding: 50px ;
+    .about {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+
+      h3 {
+        font-size: 2.2rem;
+        .span {
+          color: orangered;
+        }
+      }
+      p {
+        font-size: 1.2rem;
+      }
+      button {
+        background: orangered;
+        border: none;
+        color: #fff;
+        width: 150px;
+        // padding: 10px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 1rem;
+      }
+    }
+
+    .facilities {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      gap: 20px;
+      
+
+      div {
+        width: 150px;
+        height: 100px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: border .1s;
+        gap: 10px;
+        &:hover {
+          border: 2px solid orangered;
+          border-radius: 5px;
+        }
+        .icon {
+          color: orangered;
+        }
+      }
+
+    }
   }
 }

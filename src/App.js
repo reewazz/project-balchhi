@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Hero from "./components/Hero";
+import Facilities from "./components/Facilities";
 import "./App.scss";
+
 function App() {
   const [toggleState, settoggleState] = useState(1);
 
@@ -53,13 +55,12 @@ function App() {
             </div>
           </a>
         </div>
-
         <a href="#">
           <div className="contactBtn">Contact Us</div>
         </a>
       </div>
-
       <Hero />
+      <Facilities />
     </div>
   );
 }
