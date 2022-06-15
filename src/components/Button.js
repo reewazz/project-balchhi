@@ -1,9 +1,10 @@
 import React from 'react'
+import { Button } from '@mui/material'
 
-function Button({text}) {
+function Btn({text}) {
   return (
-    <button >{text}</button>
+    <Button variant="contained">{text}</Button>
   )
 }
 
-export default Button
+export default Btn

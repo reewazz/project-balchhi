@@ -1,10 +1,11 @@
 import React from "react";
-import WifiFillIcon from "remixicon-react/WifiFillIcon";
+// import WifiFillIcon from "remixicon-react/WifiFillIcon";
 import {
   BreakfastDining,
   LocalParking,
   WorkOutline,
 } from "@mui/icons-material";
+import Btn from "./Button";
 
 const Facilities = () => {
   return (
@@ -16,11 +17,13 @@ const Facilities = () => {
           mollitia iusto eligendi? Pariatur, accusantium? Itaque explicabo culpa
           quas laudantium. Iste, nobis.
         </p>
-        <button>Contact Now</button>
+        {/* <button>Contact Now</button> */}
+        <Btn text= {"Contact Now"}/>
       </div>
       <div className="facilities">
         <div>
-          <WifiFillIcon className="icon" />
+          {/* <WifiFillIcon className="icon" /> */}
+          <i class="ri-wifi-fill icon"></i>
           <p>Free Wifi</p>
         </div>
         <div>
