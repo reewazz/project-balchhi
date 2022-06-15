@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Hero from "./components/Hero";
+import Facilities from "./components/Facilities";
 import "./app.scss";
 function App() {
   const [toggleState, settoggleState] = useState(1);
@@ -59,6 +60,7 @@ function App() {
       </div>
 
       <Hero />
+      <Facilities />
     </div>
   );
 }
