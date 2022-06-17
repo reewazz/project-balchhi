@@ -1,9 +1,15 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Btn from "./Button";
+import AOS  from "aos";
 
 export default function About() {
+  useEffect(()=>{ 
+    AOS.init({
+      duration:3000
+    })
+  },[])
   return (
-    <div className="about_container">
+    <div className="about_container" data-aos = {"fade-right"}>
       <div className="image">
         <img
           src="https://scontent.fktm7-1.fna.fbcdn.net/v/t39.30808-6/277674557_537941567760803_5912432875754936330_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=21ky36cIO5wAX-H6IcF&_nc_ht=scontent.fktm7-1.fna&oh=00_AT_45Pw-dRL7_VOV7gKzYPZqgDW4lmq6Oc_gyu5CGe5F4A&oe=62AE8889"

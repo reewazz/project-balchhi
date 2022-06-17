@@ -7,6 +7,7 @@ import {
 import Btn from "./Button";
 
 const Facilities = () => {
+
   return (
     <div className="facilities__container">
       <div className="about">
@@ -16,13 +17,12 @@ const Facilities = () => {
           mollitia iusto eligendi? Pariatur, accusantium? Itaque explicabo culpa
           quas laudantium. Iste, nobis.
         </p>
-        {/* <button>Contact Now</button> */}
         <Btn text= {"Contact Now"}/>
       </div>
       <div className="facilities">
         <div>
           {/* <WifiFillIcon className="icon" /> */}
-          <i class="ri-wifi-fill icon"></i>
+          <i className="ri-wifi-fill icon"></i>
           <p>Free Wifi</p>
         </div>
         <div>
