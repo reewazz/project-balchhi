@@ -58,10 +58,12 @@ body {
   .hero__container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     // height: 50vh;
     // width: 80vw;
     background-color: #f3f3f5;
-    margin: 10px 10px;
+    // margin: 10px 10px;
+    margin: 10px 0;
     gap: 100px;
     font-size: 20px;
 
@@ -102,7 +104,7 @@ body {
     display: flex;
     gap: 150px;
     background: #f3f3f5;
-    margin: 50px 0;
+    margin: 100px 0;
     padding: 50px;
     .about {
       width: 50%;
@@ -132,7 +134,6 @@ body {
       }
     }
 
-
     .facilities {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -146,7 +147,7 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transition: border 0.1s;
+        transition:all 0.3s ease-in-out;
         gap: 10px;
         &:hover {
           border: 2px solid orangered;
@@ -158,12 +159,12 @@ body {
       }
     }
   }
-  .Testimonials__container{
+  .Testimonials__container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 
-    .testimonial{
+    .testimonial {
       display: flex;
       flex-direction: column;
       margin: 50px;
@@ -180,13 +181,14 @@ body {
       }
 
       img {
-        height:12vh;
+        height: 12vh;
         width: 12vh;
         border-radius: 50%;
         object-fit: cover;
       }
     }
   }
+
   .about_container {
     display: flex;
     gap: 40px;
@@ -218,5 +220,4 @@ body {
       }
     }
   }
-
 }
