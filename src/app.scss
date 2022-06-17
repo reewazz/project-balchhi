@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +7,13 @@
 body {
   margin: 0 150px;
   background-color: #f3f3f5;
+  background-color: #f3f3f5;
+  font-family: "Open Sans", sans-serif;
   .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: inherit;
-
     .logo img {
       height: 10vh;
       width: 5vw;
@@ -25,7 +27,6 @@ body {
       font-weight: bold;
       gap: 55px;
       transition: all 0.1s ease 0s;
-
       .active {
         border-bottom: 3px solid orangered;
       }
@@ -53,10 +54,14 @@ body {
       text-align: center;
       cursor: pointer;
     }
+    // import "./App.scss"
   }
   .hero__container {
     display: flex;
     justify-content: space-between;
+    // height: 50vh;
+    // width: 80vw;
+    background-color: #f3f3f5;
     background-color: #f3f3f5;
     margin: 10px 10px;
     gap: 100px;
@@ -64,12 +69,12 @@ body {
 
     .about {
       padding: 0 50px;
+      padding: 0 50px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       gap: 20px;
       width: 40vw;
-
       button {
         display: flex;
         background: transparent;
@@ -79,7 +84,6 @@ body {
         cursor: pointer;
         gap: 5px;
         font-size: 1rem;
-
         a {
           .icon {
             font-size: 2rem;
@@ -88,26 +92,26 @@ body {
         }
       }
     }
-
     img {
       height: 60vh;
       width: 33vw;
     }
   }
-
   .facilities__container {
     display: flex;
     gap: 150px;
     background: #f3f3f5;
+    background: #f3f3f5;
     margin: 50px 0;
+    padding: 50px;
     padding: 50px;
     .about {
       width: 50%;
+      width: 80%;
       display: flex;
       flex-direction: column;
       gap: 20px;
       justify-content: center;
-
       h3 {
         font-size: 2.2rem;
         .span {
@@ -126,22 +130,28 @@ body {
         border-radius: 30px;
         cursor: pointer;
         font-size: 1rem;
+        font-size: 0.8rem;
       }
     }
 
     .facilities {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 20px;
 
+      height: 5vh;
       div {
         width: 150px;
         height: 100px;
+        width: 8vw;
+        height: 10vh;
         cursor: pointer;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        transition: border 0.1s;
         transition: border 0.1s;
         gap: 10px;
         &:hover {
@@ -154,6 +164,7 @@ body {
       }
     }
   }
+
   .Testimonials__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -180,6 +191,69 @@ body {
         width: 12vh;
         border-radius: 50%;
         object-fit: cover;
+      }
+    }
+  }
+  .about_container {
+    display: flex;
+    gap: 40px;
+    margin: 50px 0;
+    padding: 30px 50px;
+
+    .image img {
+      height: 52vh;
+      width: 35vw;
+      object-fit: contain;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      span {
+        color: orangered;
+      }
+      button {
+        background: orangered;
+        border: none;
+        color: #fff;
+        width: 150px;
+        // padding: 10px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  .about_container {
+    display: flex;
+    gap: 40px;
+    margin: 50px 0;
+    padding: 30px 50px;
+
+    .image img {
+      height: 52vh;
+      width: 35vw;
+      object-fit: contain;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      span {
+        color: orangered;
+      }
+      button {
+        background: orangered;
+        border: none;
+        color: #fff;
+        width: 150px;
+        // padding: 10px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 0.8rem;
       }
     }
   }
