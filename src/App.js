@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import "./App.scss";
 import About from "./components/About";
 import Testimonials from "./components/Testimonials/Testimonials";
+import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 
 
@@ -19,7 +20,11 @@ function App() {
         What our <span style={{ color: "orangered" }}>Customer</span> say!
       </h1>
       <Testimonials />
+
+     
       <Gallery /> 
+           <Footer />
+
     </>
   );
 }
