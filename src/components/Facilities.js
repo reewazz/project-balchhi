@@ -10,6 +10,7 @@ const Facilities = () => {
 
   return (
     <div className="facilities__container">
+      <div className="container">
       <div className="about">
         <h3>Our <span className="span">Facilities</span> for you</h3>
         <p>
@@ -49,6 +50,7 @@ const Facilities = () => {
           <i className="fa-solid fa-utensils icon"></i>
           <p>Dinner</p>
         </div>
+      </div>
       </div>
     </div>
   );

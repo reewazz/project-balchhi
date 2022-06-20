@@ -1,19 +1,26 @@
 import React, { useState } from "react";
+import UpdateScrollPosition from "../Hooks/UpdateScrollPosition"
 
 export default function Navbar() {
   const [toggleState, settoggleState] = useState(1);
 
+  let scrollPosition = UpdateScrollPosition()
+  console.log(scrollPosition)
+
   const toggleMode = (index) => {
     settoggleState(index);
   };
+
   return (
-    <div className="nav">
+    <div className={scrollPosition > 27 ? "nav shadow" : "nav"}>
+      <div className="container">
+
       <div className="logo">
         <a href="#">
           {" "}
           <img
-            src="https://scontent.fktm7-1.fna.fbcdn.net/v/t39.30808-6/277554159_536567404564886_8179199460324938164_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=HvB9sWhIMvkAX9ML4R7&_nc_ht=scontent.fktm7-1.fna&oh=00_AT_MBSDpRCrl5XUcwgkA7RL3HF0o_yO1KAJ8dmwIVqEpTg&oe=62ABD65E"
-            alt=""
+            src="https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/277554159_536567404564886_8179199460324938164_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=OFvP6PeYyNsAX_C4_RU&_nc_ht=scontent.fktm3-1.fna&oh=00_AT-vMd66MLrS5-mbDnGlTVYIyF7vFpPowkwd41_EvoizFg&oe=62B1C51E"
+            alt="logo"
           />
         </a>
       </div>
@@ -55,6 +62,7 @@ export default function Navbar() {
       <a href="#">
         <div className="contactBtn">Contact Us</div>
       </a>
+    </div>
     </div>
   );
 }
