@@ -7,8 +7,10 @@ import {
 import Btn from "./Button";
 
 const Facilities = () => {
+
   return (
     <div className="facilities__container">
+      <div className="container">
       <div className="about">
         <h3>Our <span className="span">Facilities</span> for you</h3>
         <p>
@@ -16,13 +18,12 @@ const Facilities = () => {
           mollitia iusto eligendi? Pariatur, accusantium? Itaque explicabo culpa
           quas laudantium. Iste, nobis.
         </p>
-        {/* <button>Contact Now</button> */}
         <Btn text= {"Contact Now"}/>
       </div>
       <div className="facilities">
         <div>
           {/* <WifiFillIcon className="icon" /> */}
-          <i class="ri-wifi-fill icon"></i>
+          <i className="ri-wifi-fill icon"></i>
           <p>Free Wifi</p>
         </div>
         <div>
@@ -49,6 +50,7 @@ const Facilities = () => {
           <i className="fa-solid fa-utensils icon"></i>
           <p>Dinner</p>
         </div>
+      </div>
       </div>
     </div>
   );

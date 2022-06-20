@@ -3,7 +3,7 @@ import React from "react";
 function Testimonial({ name, image }) {
   return (
     <div className="testimonial">
-      <img src={image} alt="riwaj" />
+      <img src={image} alt={`${name} image`} />
       <h3>{name}</h3>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat vel
