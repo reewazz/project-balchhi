@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Btn from "./Button";
 import AOS from "aos";
+import about from "../images/about.jpg";
 
 export default function About() {
   useEffect(() => {
@@ -10,13 +11,9 @@ export default function About() {
   }, []);
   return (
     <div className="about_container" data-aos={"fade-right"}>
-
       <div className="container__">
         <div className="image">
-          <img
-            src="https://scontent.fktm3-1.fna.fbcdn.net/v/t1.6435-9/167895536_308163557405273_1002174637336758035_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=174925&_nc_ohc=yAT07SQH7zoAX_FNhB3&tn=9O6XPRlpe1UyW1Nz&_nc_ht=scontent.fktm3-1.fna&oh=00_AT-avSxNatxNQFVWBHzl-clWsX-pqADYRukGFfjRZOzfVw&oe=62D45C41"
-            alt=""
-          />
+          <img src={about} alt="balchhi_image" />
         </div>
         <div className="content">
           <div className="title">

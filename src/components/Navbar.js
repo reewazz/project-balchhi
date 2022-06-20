@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import UpdateScrollPosition from "../Hooks/UpdateScrollPosition"
+import balchhiLogo from "../images/balchhiLogo.jpg"
 
 export default function Navbar() {
   const [toggleState, settoggleState] = useState(1);
@@ -19,7 +20,8 @@ export default function Navbar() {
         <a href="#">
           {" "}
           <img
-            src="https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/277554159_536567404564886_8179199460324938164_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=OFvP6PeYyNsAX_C4_RU&_nc_ht=scontent.fktm3-1.fna&oh=00_AT-vMd66MLrS5-mbDnGlTVYIyF7vFpPowkwd41_EvoizFg&oe=62B1C51E"
+            // src="https://scontent.fktm3-1.fna.fbcdn.net/v/t39.30808-6/277554159_536567404564886_8179199460324938164_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=OFvP6PeYyNsAX_C4_RU&_nc_ht=scontent.fktm3-1.fna&oh=00_AT-vMd66MLrS5-mbDnGlTVYIyF7vFpPowkwd41_EvoizFg&oe=62B1C51E"
+            src={balchhiLogo}
             alt="logo"
           />
         </a>

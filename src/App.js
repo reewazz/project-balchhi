@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import "./App.scss";
 import About from "./components/About";
 import Testimonials from "./components/Testimonials/Testimonials";
-
+import Gallery from "./components/Gallery";
 
 
 function App() {
@@ -19,6 +19,7 @@ function App() {
         What our <span style={{ color: "orangered" }}>Customer</span> say!
       </h1>
       <Testimonials />
+      <Gallery /> 
     </>
   );
 }
