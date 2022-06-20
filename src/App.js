@@ -1,9 +1,10 @@
 import Hero from "./components/Hero";
 import Facilities from "./components/Facilities";
 import Navbar from "./components/Navbar";
-import "./app.scss";
+import "./App.scss";
 import About from "./components/About";
 import Testimonials from "./components/Testimonials/Testimonials";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         What our <span style={{ color: "orangered" }}>Customer</span> say!
       </h1>
       <Testimonials />
+      <Footer />
     </>
   );
 }
