@@ -135,7 +135,7 @@ body {
     // background: #e4e4e4;
     font-size: 2.03vh;
     z-index: 2;
-    padding: 2vh 0;
+    // padding: 1vh 0;
 
     .about {
       // padding: 0 50px;
@@ -198,7 +198,7 @@ body {
         background: orangered;
         border: none;
         color: #fff;
-        width: 10vw;
+        width: 12vw;
         // padding: 10px;
         border-radius: 1.5vw;
         cursor: pointer;
@@ -213,7 +213,7 @@ body {
 
       div {
         width: 15.2vh;
-        height: 7.8vh;
+        height: 8vh;
         cursor: pointer;
         display: flex;
         flex-direction: column;
@@ -301,13 +301,34 @@ body {
       }
     }
   }
+  .gallery__container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    gap: 20px;
+    padding: 50px 0;
+    .about {
+      display: flex;
+      flex-direction: column;
+    }
 
+    .gallery {
+      // display: flex;
+      // gap: 20px;
+      img {
+        width: 25vw;
+        height: 32vh;
+        object-fit: cover;
+      }
+    }
+  }
   .footer_container {
     color: white;
     display: flex;
     padding: 3vh 11vw;
     gap: 20vw;
-    background: #1a202d;
+    background: black;
     a {
       text-decoration: none;
       color: white;
@@ -325,10 +346,25 @@ body {
         gap: 0.7vw;
 
         i {
-          background: white;
-          color: black;
+          // background: white;
+          // color: black;
           font-size: 1.8rem;
-          border-radius: 40%;
+          // border-radius: 40%;
+        }
+        .ri-facebook-fill {
+          &:hover {
+            color: #4267b2;
+          }
+        }
+        .ri-instagram-line {
+          &:hover {
+            color: #c13584;
+          }
+        }
+        .ri-whatsapp-line {
+          &:hover {
+            color: #25d366;
+          }
         }
       }
     }
