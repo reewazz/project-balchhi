@@ -1,6 +1,6 @@
 import React from "react";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
-import hero from "../images/hero.jpg";
+import hero from "../images/hero1.jpg";
 
 function Hero() {
   return (
