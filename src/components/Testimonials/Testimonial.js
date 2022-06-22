@@ -5,6 +5,7 @@ function Testimonial({ name, image }) {
   return (
     <div className="testimonial">
       <img src={image} alt={`${name} image`} />
+
       <h3>{name}</h3>
       <Rating name="read-only" value={4} readOnly />
       <p>
