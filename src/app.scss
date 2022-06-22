@@ -165,6 +165,7 @@ body {
     }
 
     img {
+      margin-left: 5vw;
       height: 60vh;
       width: 33vw;
     }
@@ -251,7 +252,7 @@ body {
         align-items: center;
         // justify-content: center;
         padding: 4.06vh 2.08vw;
-        gap: 0.5vw;
+        gap: 0.9vw;
         background: #eeeeee;
         cursor: pointer;
 
@@ -376,6 +377,65 @@ body {
         list-style: none;
         margin: 1vh 0;
       }
+    }
+  }
+  .map_container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 2vw;
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 2vh;
+      .icons {
+        display: grid;
+        gap: 2vh 8vw;
+        grid-template-columns: auto auto;
+        // margin-right: 8vw;
+
+        .grid_item {
+          display: flex;
+          flex-direction: column;
+          gap: 2vh;
+          padding: 40px 0px;
+          // font-size: 20px;
+          align-items: center;
+          &:hover {
+            transform: scale(1.1);
+          }
+          .icons {
+            display: flex;
+
+            gap: 0.7vw;
+            a {
+              text-decoration: none;
+              color: #000;
+            }
+
+            .ri-facebook-fill {
+              &:hover {
+                color: #4267b2;
+              }
+            }
+            .ri-instagram-line {
+              &:hover {
+                color: #c13584;
+              }
+            }
+            .ri-whatsapp-line {
+              &:hover {
+                color: #25d366;
+              }
+            }
+          }
+        }
+      }
+    }
+    .map {
+      display: flex;
+      align-items: center;
     }
   }
 }

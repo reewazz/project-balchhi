@@ -6,7 +6,7 @@ import About from "./components/About";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
-
+import Map from "./components/Map";
 
 function App() {
   return (
@@ -20,11 +20,9 @@ function App() {
         What our <span style={{ color: "orangered" }}>Customer</span> say!
       </h1>
       <Testimonials />
-
-     
-      <Gallery /> 
-           <Footer />
-
+      <Gallery />
+      <Map />
+      <Footer />
     </>
   );
 }
