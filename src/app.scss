@@ -23,7 +23,7 @@
 
 .custom-shape-divider-top-1655666485 .shape-fill {
   // fill: #dddddd;
-  fill: #e1e1e1;
+  fill:#e1e1e1;
 }
 
 .custom-shape-divider-top-1655707445 {
@@ -55,7 +55,7 @@
   align-items: center;
 }
 
-.container__ {
+.container__{
   gap: 80px;
   width: 80%;
   margin: auto;
@@ -70,7 +70,7 @@ body {
   background-color: #f3f3f5;
   // background: #e4e4e4;
   // overflow-x: hidden;
-
+  
   .nav {
     display: flex;
     align-items: center;
@@ -84,7 +84,8 @@ body {
     &.shadow {
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       background: #e1e1e1;
-    }
+
+    }   
 
     .logo img {
       height: 10vh;
@@ -165,7 +166,6 @@ body {
     }
 
     img {
-      margin-left: 5vw;
       height: 60vh;
       width: 33vw;
     }
@@ -178,6 +178,7 @@ body {
     // background: #c9c9c9;
     margin: 50px 0;
     padding: 50px 0;
+
 
     .about {
       width: 50%;
@@ -199,7 +200,7 @@ body {
         background: orangered;
         border: none;
         color: #fff;
-        width: 12vw;
+        width: 7.8vw;
         // padding: 10px;
         border-radius: 1.5vw;
         cursor: pointer;
@@ -214,13 +215,13 @@ body {
 
       div {
         width: 15.2vh;
-        height: 8vh;
+        height: 7.8vh;
         cursor: pointer;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        transition: all 0.3s ease-in-out;
+        transition:all 0.3s ease-in-out;
         gap: 0.7vw;
         &:hover {
           border: 2px solid orangered;
@@ -239,36 +240,37 @@ body {
     // margin: auto;
     // width: 100%;
 
-    .container_ {
+    .container_{
       display: flex;
       width: 80%;
       margin: 50px auto;
       gap: 100px;
+    
 
-      .testimonial {
-        display: flex;
-        flex-direction: column;
-        // margin: 50px;
-        align-items: center;
-        // justify-content: center;
-        padding: 4.06vh 2.08vw;
-        gap: 0.9vw;
-        background: #eeeeee;
-        cursor: pointer;
+    .testimonial {
+      display: flex;
+      flex-direction: column;
+      // margin: 50px;
+      align-items: center;
+      // justify-content: center;
+      padding: 4.06vh 2.08vw;
+      gap: 0.5vw;
+      background: #eeeeee;
+      cursor: pointer;
 
-        &:hover {
-          background: #f3f3f5;
-          transform: scale(1.1);
-        }
+      &:hover {
+        background: #f3f3f5;
+        transform: scale(1.1);
+      }
 
-        img {
-          height: 12vh;
-          width: 12vh;
-          border-radius: 50%;
-          object-fit: cover;
-        }
+      img {
+        height: 12vh;
+        width: 12vh;
+        border-radius: 50%;
+        object-fit: cover;
       }
     }
+  }
   }
 
   .about_container {
@@ -309,133 +311,19 @@ body {
     margin: auto;
     gap: 20px;
     padding: 50px 0;
-    .about {
+    .about{
       display: flex;
       flex-direction: column;
     }
 
-    .gallery {
+    .gallery{
       // display: flex;
       // gap: 20px;
-      img {
+      img{
         width: 25vw;
         height: 32vh;
         object-fit: cover;
       }
-    }
-  }
-  .footer_container {
-    color: white;
-    display: flex;
-    padding: 3vh 11vw;
-    gap: 20vw;
-    background: black;
-    a {
-      text-decoration: none;
-      color: white;
-    }
-    .left {
-      display: flex;
-      flex-direction: column;
-      gap: 2vh;
-      width: 30vw;
-      p {
-        width: 15vw;
-      }
-      .icons {
-        display: flex;
-        gap: 0.7vw;
-
-        i {
-          // background: white;
-          // color: black;
-          font-size: 1.8rem;
-          // border-radius: 40%;
-        }
-        .ri-facebook-fill {
-          &:hover {
-            color: #4267b2;
-          }
-        }
-        .ri-instagram-line {
-          &:hover {
-            color: #c13584;
-          }
-        }
-        .ri-whatsapp-line {
-          &:hover {
-            color: #25d366;
-          }
-        }
-      }
-    }
-
-    .right {
-      display: flex;
-      gap: 4vw;
-      ul {
-        list-style: none;
-        margin: 1vh 0;
-      }
-    }
-  }
-  .map_container {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    gap: 2vw;
-    .content {
-      display: flex;
-      flex-direction: column;
-      gap: 2vh;
-      .icons {
-        display: grid;
-        gap: 2vh 8vw;
-        grid-template-columns: auto auto;
-        // margin-right: 8vw;
-
-        .grid_item {
-          display: flex;
-          flex-direction: column;
-          gap: 2vh;
-          padding: 40px 0px;
-          // font-size: 20px;
-          align-items: center;
-          &:hover {
-            transform: scale(1.1);
-          }
-          .icons {
-            display: flex;
-
-            gap: 0.7vw;
-            a {
-              text-decoration: none;
-              color: #000;
-            }
-
-            .ri-facebook-fill {
-              &:hover {
-                color: #4267b2;
-              }
-            }
-            .ri-instagram-line {
-              &:hover {
-                color: #c13584;
-              }
-            }
-            .ri-whatsapp-line {
-              &:hover {
-                color: #25d366;
-              }
-            }
-          }
-        }
-      }
-    }
-    .map {
-      display: flex;
-      align-items: center;
     }
   }
 }
