@@ -11,13 +11,13 @@ export default function Footer() {
         </p>
         <div className="icons">
           <a href="https://www.facebook.com/Balchhireosrt/">
-            <i class="ri-facebook-fill"></i>
+            <i className="ri-facebook-fill"></i>
           </a>
           <a href="https://www.instagram.com/balchhiresort/">
-            <i class="ri-instagram-line"></i>
+            <i className="ri-instagram-line"></i>
           </a>
           <a href="#">
-            <i class="ri-whatsapp-line"></i>
+            <i className="ri-whatsapp-line"></i>
           </a>
         </div>
         <span>Copyright &copy; 2022 Balchhi. All Right Reserved</span>

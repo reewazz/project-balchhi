@@ -1,7 +1,6 @@
 import React from "react";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
-import hero from "../images/hero.jpg";
-
+import hero from "../images/hero1.jpg";
 
 function Hero() {
   return (
@@ -41,10 +40,9 @@ function Hero() {
           </button>
         </div>
         <div className="image">
-
           <img src={hero} alt="balchhi" />
         </div>
-        <div class="custom-shape-divider-top-1655708468">
+        {/* <div class="custom-shape-divider-top-1655708468">
           <svg
             data-name="Layer 1"
             xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +68,8 @@ function Hero() {
             ></path>
           </svg>
 
-        </div>
+        </div> */}
+        {/* </div> */}
       </div>
     </div>
   );
