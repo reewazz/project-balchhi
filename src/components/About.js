@@ -10,7 +10,7 @@ export default function About() {
     });
   }, []);
   return (
-    <div className="about_container" data-aos={"fade-right"}>
+    <div className="about_container"  id="about__container" data-aos={"fade-right"}>
       <div className="container__">
         <div className="image">
           <img src={about} alt="balchhi_image" />

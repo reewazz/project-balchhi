@@ -9,7 +9,7 @@ import Btn from "./Button";
 const Facilities = () => {
 
   return (
-    <div className="facilities__container">
+    <div className="facilities__container" id="facilities__container">
       <div className="container">
       <div className="about">
         <h3>Our <span className="span">Facilities</span> for you</h3>
