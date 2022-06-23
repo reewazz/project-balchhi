@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -29,6 +33,8 @@ body {
   width: 100vw;
   background-color: #f3f3f5;
   overflow-x: hidden;
+  // font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   // @section => nav container
   .nav {
     display: flex;
@@ -272,6 +278,7 @@ body {
       display: flex;
       flex-direction: column;
       gap: 30px;
+      font-size: 1.2rem;
 
       span {
         color: orangered;
@@ -281,10 +288,9 @@ body {
         border: none;
         color: #fff;
         width: 150px;
-        // padding: 10px;
         border-radius: 30px;
         cursor: pointer;
-        font-size: 0.8rem;
+        font-size: 1rem;
       }
     }
   }
@@ -299,6 +305,9 @@ body {
       display: flex;
       flex-direction: column;
       gap: 10px;
+      p {
+        font-size: 1.1rem;
+      }
     }
 
     .gallery {
@@ -336,125 +345,149 @@ body {
   .footer_container {
     color: white;
     display: flex;
-    padding: 3vh 11vw;
-    gap: 20vw;
+    padding: 3vh 2vw;
     background: black;
+    flex-direction: column;
+    .wrapper{
+      display: flex;
+      width: 80%;
+      margin: auto;
+      justify-content: space-between;
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+        width: 30vw;
+        p {
+          width: 15vw;
+        }
+        .icons {
+          display: flex;
+          gap: 0.7vw;
+  
+          i {
+            // background: white;
+            // color: black;
+            font-size: 1.8rem;
+            // border-radius: 40%;
+          }
+          .ri-facebook-fill {
+            &:hover {
+              color: #4267b2;
+            }
+          }
+          .ri-instagram-line {
+            &:hover {
+              color: #c13584;
+            }
+          }
+          .ri-whatsapp-line {
+            &:hover {
+              color: #25d366;
+            }
+          }
+        }
+      }
+      .right {
+        li{
+          list-style: none;
+        }
+        .home {
+          display: flex;
+          flex-direction: column;
+          gap: 1vh;
+        }
+        .About {
+          display: flex;
+          flex-direction: column;
+          gap:1vh;
+        }
+        .Help {
+          display: flex;
+          flex-direction: column;
+          gap: 1vh;
+        }
+        display: flex;
+        gap: 2vw;
+        justify-content: center;
+      }
+    }
     a {
       text-decoration: none;
       color: white;
     }
-    .left {
-      display: flex;
-      flex-direction: column;
-      gap: 2vh;
-      width: 30vw;
-      p {
-        width: 15vw;
-      }
-      .icons {
-        display: flex;
-        gap: 0.7vw;
-
-        i {
-          // background: white;
-          // color: black;
-          font-size: 1.8rem;
-          // border-radius: 40%;
-        }
-        .ri-facebook-fill {
-          &:hover {
-            color: #4267b2;
-          }
-        }
-        .ri-instagram-line {
-          &:hover {
-            color: #c13584;
-          }
-        }
-        .ri-whatsapp-line {
-          &:hover {
-            color: #25d366;
-          }
-        }
-      }
-    }
-    .right {
-      li{
-        list-style: none;
-      }
-      .home {
-        display: flex;
-        flex-direction: column;
-        gap: 1vh;
-      }
-      .About {
-        display: flex;
-        flex-direction: column;
-        gap:1vh;
-      }
-      .Help {
-        display: flex;
-        flex-direction: column;
-        gap: 1vh;
-      }
-      display: flex;
-      gap: 2vw;
-      justify-content: center;
-    }
+    
   }
   .map_container {
     width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between;
-    gap: 2vw;
+    // gap: 2vw;
+    flex-direction: column;
     .content {
       display: flex;
       flex-direction: column;
-      gap: 2vh;
-      .icons {
-        display: grid;
-        gap: 2vh 8vw;
-        grid-template-columns: auto auto;
-        // margin-right: 8vw;
-
-        .grid_item {
-          display: flex;
-          flex-direction: column;
-          gap: 2vh;
-          padding: 40px 0px;
-          // font-size: 20px;
-          align-items: center;
-          &:hover {
-            transform: scale(1.1);
-          }
-          .icons {
+      // gap: 2vh;
+      h1{
+        span {
+          color: orangered;
+        }
+      }
+      p{
+        font-size: 1.2rem;
+      }
+    }
+      .map__content{
+        display: flex;
+        justify-content: space-between;
+        .icons {
+          width: 50%;
+          display: grid;
+          gap: 2vh 8vw;
+          grid-template-columns:repeat(2,1fr);
+          // margin-right: 8vw;
+  
+          .grid_item {
             display: flex;
-
-            gap: 0.7vw;
-            a {
-              text-decoration: none;
-              color: #000;
+            flex-direction: column;
+            gap: 2vh;
+            padding: 40px 0px;
+            // font-size: 20px;
+            align-items: center;
+            &:hover {
+              transform: scale(1.1);
             }
-
-            .ri-facebook-fill {
-              &:hover {
-                color: #4267b2;
+            .icons {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+  
+              gap: 0.7vw;
+              a {
+                text-decoration: none;
+                color: #000;
               }
-            }
-            .ri-instagram-line {
-              &:hover {
-                color: #c13584;
+  
+              .ri-facebook-fill {
+                &:hover {
+                  color: #4267b2;
+                }
               }
-            }
-            .ri-whatsapp-line {
-              &:hover {
-                color: #25d366;
+              .ri-instagram-line {
+                &:hover {
+                  color: #c13584;
+                }
+              }
+              .ri-whatsapp-line {
+                &:hover {
+                  color: #25d366;
+                }
               }
             }
           }
         }
-      }
     }
     .map {
       display: flex;
