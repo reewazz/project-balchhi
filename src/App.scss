@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+$color:orangered;
+
 .custom-shape-divider-top-1655666485 {
   position: absolute;
   top: 0;
@@ -98,7 +100,7 @@ body {
       display: flex;
       align-items: center;
       font-weight: bold;
-      gap: 55px;
+      gap: 65px;
       transition: all 0.1s ease 0s;
 
       .active {
@@ -108,7 +110,6 @@ body {
         text-decoration: none;
         border-radius: 1vh;
         color: #000;
-        padding: 0.6vh 1vw;
         cursor: pointer;
       }
     }
@@ -314,16 +315,79 @@ body {
     .about{
       display: flex;
       flex-direction: column;
+      gap: 10px;
     }
 
-    .gallery{
-      // display: flex;
-      // gap: 20px;
-      img{
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      .image-container {
         width: 25vw;
-        height: 32vh;
-        object-fit: cover;
+        height: 39vh;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    .button{
+      display: flex;
+      justify-content: flex-end;
+      gap: 5px;
+
+      button {
+        .btn {
+          background: transparent;
+          color: black;
+        
+        &.active {
+          color: $color;
+        }
+      }
+      }
+
+    }
+  }
+  .footer_container {
+    color: white;
+    display: flex;
+    padding: 3vh 11vw;
+    gap: 20vw;
+    background: #1a202d;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 2vh;
+      width: 30vw;
+      p {
+        width: 15vw;
+      }
+      .icons {
+        display: flex;
+        gap: 0.7vw;
+
+        i {
+          background: white;
+          color: black;
+          font-size: 1.8rem;
+          border-radius: 40%;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      gap: 4vw;
+      ul {
+        list-style: none;
+        margin: 1vh 0;
       }
     }
   }
 }
+
