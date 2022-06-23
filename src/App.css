@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -34,6 +35,7 @@ body {
   width: 100vw;
   background-color: #f3f3f5;
   overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
 }
 body .nav {
   display: -webkit-box;
@@ -311,6 +313,7 @@ body .about_container .content {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 30px;
+  font-size: 1.2rem;
 }
 body .about_container .content span {
   color: orangered;
@@ -322,7 +325,7 @@ body .about_container .content button {
   width: 150px;
   border-radius: 30px;
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 body .gallery__container {
   display: -webkit-box;
@@ -346,6 +349,9 @@ body .gallery__container .about {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
+}
+body .gallery__container .about p {
+  font-size: 1.1rem;
 }
 body .gallery__container .gallery {
   display: -ms-grid;
@@ -385,15 +391,24 @@ body .footer_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 3vh 11vw;
-  gap: 20vw;
+  padding: 3vh 2vw;
   background: black;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-body .footer_container a {
-  text-decoration: none;
-  color: white;
+body .footer_container .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-body .footer_container .left {
+body .footer_container .wrapper .left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -404,28 +419,28 @@ body .footer_container .left {
   gap: 2vh;
   width: 30vw;
 }
-body .footer_container .left p {
+body .footer_container .wrapper .left p {
   width: 15vw;
 }
-body .footer_container .left .icons {
+body .footer_container .wrapper .left .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 0.7vw;
 }
-body .footer_container .left .icons i {
+body .footer_container .wrapper .left .icons i {
   font-size: 1.8rem;
 }
-body .footer_container .left .icons .ri-facebook-fill:hover {
+body .footer_container .wrapper .left .icons .ri-facebook-fill:hover {
   color: #4267b2;
 }
-body .footer_container .left .icons .ri-instagram-line:hover {
+body .footer_container .wrapper .left .icons .ri-instagram-line:hover {
   color: #c13584;
 }
-body .footer_container .left .icons .ri-whatsapp-line:hover {
+body .footer_container .wrapper .left .icons .ri-whatsapp-line:hover {
   color: #25d366;
 }
-body .footer_container .right {
+body .footer_container .wrapper .right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -434,10 +449,10 @@ body .footer_container .right {
       -ms-flex-pack: center;
           justify-content: center;
 }
-body .footer_container .right li {
+body .footer_container .wrapper .right li {
   list-style: none;
 }
-body .footer_container .right .home {
+body .footer_container .wrapper .right .home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -447,7 +462,7 @@ body .footer_container .right .home {
           flex-direction: column;
   gap: 1vh;
 }
-body .footer_container .right .About {
+body .footer_container .wrapper .right .About {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -457,7 +472,7 @@ body .footer_container .right .About {
           flex-direction: column;
   gap: 1vh;
 }
-body .footer_container .right .Help {
+body .footer_container .wrapper .right .Help {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -466,6 +481,10 @@ body .footer_container .right .Help {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1vh;
+}
+body .footer_container a {
+  text-decoration: none;
+  color: white;
 }
 body .map_container {
   width: 80%;
@@ -476,7 +495,10 @@ body .map_container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 2vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 body .map_container .content {
   display: -webkit-box;
@@ -486,16 +508,30 @@ body .map_container .content {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2vh;
 }
-body .map_container .content .icons {
+body .map_container .content h1 span {
+  color: orangered;
+}
+body .map_container .content p {
+  font-size: 1.2rem;
+}
+body .map_container .map__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body .map_container .map__content .icons {
+  width: 50%;
   display: -ms-grid;
   display: grid;
   gap: 2vh 8vw;
-  -ms-grid-columns: auto 8vw auto;
-  grid-template-columns: auto auto;
+  -ms-grid-columns: 1fr 8vw 1fr;
+  grid-template-columns: repeat(2, 1fr);
 }
-body .map_container .content .icons .grid_item {
+body .map_container .map__content .icons .grid_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,27 +545,33 @@ body .map_container .content .icons .grid_item {
       -ms-flex-align: center;
           align-items: center;
 }
-body .map_container .content .icons .grid_item:hover {
+body .map_container .map__content .icons .grid_item:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
-body .map_container .content .icons .grid_item .icons {
+body .map_container .map__content .icons .grid_item .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 0.7vw;
 }
-body .map_container .content .icons .grid_item .icons a {
+body .map_container .map__content .icons .grid_item .icons a {
   text-decoration: none;
   color: #000;
 }
-body .map_container .content .icons .grid_item .icons .ri-facebook-fill:hover {
+body .map_container .map__content .icons .grid_item .icons .ri-facebook-fill:hover {
   color: #4267b2;
 }
-body .map_container .content .icons .grid_item .icons .ri-instagram-line:hover {
+body .map_container .map__content .icons .grid_item .icons .ri-instagram-line:hover {
   color: #c13584;
 }
-body .map_container .content .icons .grid_item .icons .ri-whatsapp-line:hover {
+body .map_container .map__content .icons .grid_item .icons .ri-whatsapp-line:hover {
   color: #25d366;
 }
 body .map_container .map {

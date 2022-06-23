@@ -5,17 +5,16 @@ import about from "../images/about.jpg";
 
 export default function About() {
   useEffect(() => {
-    AOS.init({
-      duration: 3000,
-    });
+    AOS.init();
   }, []);
+
   return (
-    <div className="about_container"  id="about__container" data-aos={"fade-right"}>
+    <div className="about_container"  id="about__container">
       <div className="container__">
-        <div className="image">
+        <div className="image" data-aos = {"fade-up-right"} data-aos-duration = {900}>
           <img src={about} alt="balchhi_image" />
         </div>
-        <div className="content">
+        <div className="content" data-aos = {"fade-up-left"} data-aos-duration = "900" data-aos-easing>
           <div className="title">
             <h1>
               <b>About</b>
