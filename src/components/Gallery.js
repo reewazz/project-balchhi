@@ -7,6 +7,7 @@ import ArrowRight from "remixicon-react/ArrowRightFillIcon";
 import about from "../images/about.jpg";
 import hero from "../images/hero.jpg";
 import hero1 from "../images/hero1.jpg";
+import pokhari from "../images/pokhari.jpg";
 import Aos from "aos";
 import { Button } from "@mui/material";
 
@@ -30,7 +31,7 @@ import { Button } from "@mui/material";
 //   },
 // };
 
-const images = [about, hero, hero1, hero, about];
+const images = [about, hero, hero1, hero, about, pokhari];
 
 function Gallery() {
   const [initial, setInitial] = useState(0);
@@ -69,13 +70,13 @@ function Gallery() {
         <p>Our target is to provide you with a best quality service</p>
       </div>
       <div className="gallery">
-          {images.slice(initial, final).map((image, index) => {
-            return (
-              <div className="image-container">
-                <img src={image} key={index} alt={image} />
-              </div>
-            );
-          })}
+        {images.slice(initial, final).map((image, index) => {
+          return (
+            <div className="image-container">
+              <img src={image} key={index} alt={image} />
+            </div>
+          );
+        })}
       </div>
       <div className="button">
         <Button
@@ -88,7 +89,7 @@ function Gallery() {
         <Button
           onClick={() => slideNext(2)}
           className={toggle === 2 ? "btn active" : "btn"}
-          disabled={count === 2}
+          disabled={count === 3}
         >
           <ArrowRight className={toggle === 2 ? "btn active" : "btn"} />
         </Button>

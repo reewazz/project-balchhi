@@ -4,7 +4,7 @@ export default function Map() {
   return (
     <div className="map_container">
       <div className="content">
-        <h3>Contact Us</h3>
+        <h1>Contact Us</h1>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt cum
         expedita dolor, est, ab sequi et debitis corporis consequuntur quos
         officia dicta exercitationem culpa!

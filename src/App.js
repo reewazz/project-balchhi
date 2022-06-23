@@ -1,7 +1,7 @@
 import Hero from "./components/Hero";
 import Facilities from "./components/Facilities";
 import Navbar from "./components/Navbar";
-import "./App.css"
+import "./App.css";
 import About from "./components/About";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer";

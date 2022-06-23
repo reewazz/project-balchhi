@@ -1,23 +1,18 @@
 import React from "react";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import hero from "../images/hero1.jpg";
-import 'animate.css';
+import "animate.css";
 
 function Hero() {
   return (
     <div className="hero__container">
       <div className="container">
-        
         <div className="about">
-        <div className="blob animate__animated animate__pulse animate__infinite	infinite"></div>
-        <div className="blob1 animate__animated animate__pulse animate__infinite	infinite"></div>
+          <div className="blob animate__animated animate__pulse animate__infinite	infinite"></div>
+          <div className="blob1 animate__animated animate__pulse animate__infinite	infinite"></div>
           <p>Welcome to balchhi</p>
           <h1>Probably The Best In The Town!</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            quibusdam dolorum nulla magni consequatur nihil eaque similique aut
-            voluptatem cupiditate.
-          </p>
+          <p>We Connect Like a Family With Best Food In The Town.</p>
 
           <button>
             <a
@@ -29,7 +24,7 @@ function Hero() {
             </a>
             Watch video
           </button>
-                  <div className="blob animate__animated animate__pulse animate__infinite	infinite"></div>
+          <div className="blob animate__animated animate__pulse animate__infinite	infinite"></div>
           <div className="blob1 animate__animated animate__pulse animate__infinite	infinite"></div>
         </div>
 
