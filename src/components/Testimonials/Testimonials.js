@@ -7,13 +7,11 @@ import riwaj from "../../images/riwaj.jpg";
 
 function Testimonials() {
   useEffect(() => {
-    AOS.init({
-      duration: 2000,
-    });
+    AOS.init();
   });
 
   return (
-    <div className="Testimonials__container" data-aos="fade-up">
+    <div className="Testimonials__container" data-aos="zoom-in-up">
       <div className="container_">
         <Testimonial name={"Riwaj Neupane"} image={riwaj} />
         <Testimonial name={"Suraj Gaire"} image={gaire} />

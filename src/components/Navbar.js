@@ -59,7 +59,7 @@ export default function Navbar() {
               About Us
             </div>
           </Link>
-          <Link>
+          <Link to="map__container" smooth = {true} duration = {1000}>
             <div
               className={toggleState === 4 ? "btn active" : "btn"}
               onClick={() => toggleMode(4)}
