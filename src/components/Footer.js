@@ -23,10 +23,6 @@ export default function Footer() {
         </div>
         <span>Copyright &copy; 2022 Balchhi. All Right Reserved</span>
       </div>
-      {/* <div className="map">
-        {" "}
-        <Map />
-      </div> */}
 
       <div className="right">
         <div className="home">

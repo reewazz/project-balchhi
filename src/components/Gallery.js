@@ -80,14 +80,14 @@ function Gallery() {
       <div className="button">
         <Button
           onClick={() => slidePrev(1)}
-          // className={toggle === 1 ? "active" : "btn"}
+          className={toggle === 1 ? " btn active" : "btn"}
           disabled={initial === 0}
         >
           <ArrowLeft className={toggle === 1 ? "btn active" : "btn"} />
         </Button>
         <Button
           onClick={() => slideNext(2)}
-          // className={toggle === 2 ? "active" : "btn"}
+          className={toggle === 2 ? "btn active" : "btn"}
           disabled={count === 2}
         >
           <ArrowRight className={toggle === 2 ? "btn active" : "btn"} />
