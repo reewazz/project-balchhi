@@ -239,18 +239,24 @@ body {
 
     .testimonial {
       display: flex;
-      flex-direction: column;
-      // margin: 50px;
       align-items: center;
       // justify-content: center;
       padding: 4.06vh 2.08vw;
-      gap: 0.5vw;
+      gap: 3vw;
       background: #eeeeee;
       cursor: pointer;
 
       &:hover {
         background: #f3f3f5;
         transform: scale(1.1);
+      }
+
+      .about {
+        width: 50%;
+      }
+
+      q{
+        font-size: 1.2rem;
       }
 
       img {
@@ -341,6 +347,11 @@ body {
               object-fit: cover;
             }
           }
+
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+          color: orangered;
         }
       }
     }
@@ -463,20 +474,25 @@ body {
       .map__content{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         .icons {
           width: 50%;
           display: grid;
-          gap: 2vh 8vw;
+          gap: 2vh 3vw;
           grid-template-columns:repeat(2,1fr);
+          padding: 20px 0;
           // margin-right: 8vw;
   
           .grid_item {
             display: flex;
             flex-direction: column;
-            gap: 2vh;
-            padding: 40px 0px;
-            // font-size: 20px;
+            gap: .5vh;
             align-items: center;
+            justify-content: center;
+            border: 1px solid grey;
+            cursor: pointer;
+            padding: 2vh 0;
+            border-radius: 5px;
             &:hover {
               transform: scale(1.1);
             }
@@ -485,7 +501,7 @@ body {
               justify-content: center;
               align-items: center;
   
-              gap: 0.7vw;
+              gap: 0.5vw;
               a {
                 text-decoration: none;
                 color: #000;
@@ -513,6 +529,7 @@ body {
     .map {
       display: flex;
       align-items: center;
+      justify-content: center;
     }
   }
 }
