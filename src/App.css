@@ -353,17 +353,23 @@ body .gallery__container .about {
 body .gallery__container .about p {
   font-size: 1.1rem;
 }
-body .gallery__container .gallery {
+body .gallery__container .swiperContainer {
+  width: 100%;
+}
+body .gallery__container .swiperContainer .mySwiper {
+  width: 100%;
+}
+body .gallery__container .swiperContainer .mySwiper .swiperSlide {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
 }
-body .gallery__container .gallery .image-container {
+body .gallery__container .swiperContainer .mySwiper .swiperSlide .image-container {
   width: 25vw;
   height: 39vh;
 }
-body .gallery__container .gallery .image-container img {
+body .gallery__container .swiperContainer .mySwiper .swiperSlide .image-container img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;

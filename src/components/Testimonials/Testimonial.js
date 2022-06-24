@@ -4,7 +4,7 @@ import { Rating } from "@mui/material";
 function Testimonial({ name, image }) {
   return (
     <div className="testimonial">
-      <img src={image} alt={`${name} image`} />
+      <img src={image} alt={`${name}`} />
 
       <h3>{name}</h3>
       <Rating name="read-only" value={4} readOnly />

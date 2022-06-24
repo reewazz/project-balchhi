@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import UpdateScrollPosition from "../Hooks/UpdateScrollPosition";
 import balchhiLogo from "../images/balchhiLogo.jpg";
-import { Link ,animateScroll} from "react-scroll";
+import { Link, animateScroll } from "react-scroll";
 
 export default function Navbar() {
   const [toggleState, settoggleState] = useState(1);
@@ -18,14 +18,11 @@ export default function Navbar() {
         <div className="logo">
           <a href="/">
             {" "}
-            <img
-              src={balchhiLogo}
-              alt="logo"
-            />
+            <img src={balchhiLogo} alt="logo" />
           </a>
         </div>
         <div className="mid">
-          <Link smooth={true} onClick = {animateScroll.scrollToTop}>
+          <Link smooth={true} onClick={animateScroll.scrollToTop}>
             <div
               className={toggleState === 1 ? "btn active" : "btn"}
               onClick={() => toggleMode(1)}
@@ -59,7 +56,7 @@ export default function Navbar() {
               About Us
             </div>
           </Link>
-          <Link to="map__container" smooth = {true} duration = {1000}>
+          <Link to="map__container" smooth={true} duration={1000}>
             <div
               className={toggleState === 4 ? "btn active" : "btn"}
               onClick={() => toggleMode(4)}
@@ -68,7 +65,7 @@ export default function Navbar() {
             </div>
           </Link>
         </div>
-
+ 
         <a href="/">
           <div className="contactBtn">Contact Us</div>
         </a>
