@@ -1,6 +1,7 @@
 import React from "react";
 import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import hero from "../images/hero1.jpg";
+import { Typography } from "@mui/material";
 import 'animate.css';
 
 function Hero() {
@@ -11,13 +12,14 @@ function Hero() {
         <div className="about">
         <div className="blob animate__animated animate__pulse animate__infinite	infinite"></div>
         <div className="blob1 animate__animated animate__pulse animate__infinite	infinite"></div>
-          <p>Welcome to balchhi</p>
-          <h1>Probably The Best In The Town!</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
-            quibusdam dolorum nulla magni consequatur nihil eaque similique aut
-            voluptatem cupiditate.
-          </p>
+          {/* <em>Welcome to balchhi,</em> */}
+          <Typography variant="em" component={"em"}>Welcome to balchhi,</Typography>
+          {/* <h1>Probably The Best In The Town!</h1> */}
+          <Typography variant="h1" component={"h1"}>Probably The Best In The Town!</Typography>
+          {/* <p>
+            We connect like a family with best food.
+          </p> */}
+          <Typography component={"p"} variant="p"> We connect like a family with best food.</Typography>
 
           <button>
             <a
@@ -27,7 +29,7 @@ function Hero() {
             >
               <PlayCircleIcon className="icon" />
             </a>
-            Watch video
+            <Typography> Watch video</Typography>
           </button>
                   <div className="blob animate__animated animate__pulse animate__infinite	infinite"></div>
           <div className="blob1 animate__animated animate__pulse animate__infinite	infinite"></div>
