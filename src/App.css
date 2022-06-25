@@ -216,7 +216,7 @@ body .facilities__container .about button {
   background: orangered;
   border: none;
   color: #fff;
-  width: 10vw;
+  width: 7.8vw;
   border-radius: 1.5vw;
   cursor: pointer;
   font-size: 1rem;
@@ -268,15 +268,11 @@ body .Testimonials__container .container_ .testimonial {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   padding: 4.06vh 2.08vw;
-  gap: 0.5vw;
+  gap: 3vw;
   background: #eeeeee;
   cursor: pointer;
 }
@@ -284,6 +280,12 @@ body .Testimonials__container .container_ .testimonial:hover {
   background: #f3f3f5;
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+}
+body .Testimonials__container .container_ .testimonial .about {
+  width: 50%;
+}
+body .Testimonials__container .container_ .testimonial q {
+  font-size: 1.2rem;
 }
 body .Testimonials__container .container_ .testimonial img {
   height: 12vh;
@@ -353,21 +355,42 @@ body .gallery__container .about {
 body .gallery__container .about p {
   font-size: 1.1rem;
 }
-body .gallery__container .gallery {
+body .gallery__container .swiperContainer {
+  width: 100%;
+}
+body .gallery__container .swiperContainer .mySwiper {
+  width: 100%;
+}
+body .gallery__container .swiperContainer .mySwiper .swiperSlide {
   display: -ms-grid;
   display: grid;
   /* -ms-grid-columns: (1fr)[3]; */
   grid-template-columns: repeat(3, 1fr);
 }
-body .gallery__container .gallery .image-container {
+body
+  .gallery__container
+  .swiperContainer
+  .mySwiper
+  .swiperSlide
+  .image-container {
   width: 25vw;
   height: 39vh;
 }
-body .gallery__container .gallery .image-container img {
+body
+  .gallery__container
+  .swiperContainer
+  .mySwiper
+  .swiperSlide
+  .image-container
+  img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+body .gallery__container .swiperContainer .mySwiper .swiper-button-prev,
+body .gallery__container .swiperContainer .mySwiper .swiper-button-next {
+  color: orangered;
 }
 body .gallery__container .button {
   display: -webkit-box;
@@ -522,14 +545,18 @@ body .map_container .map__content {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 body .map_container .map__content .icons {
   width: 50%;
   display: -ms-grid;
   display: grid;
-  gap: 2vh 8vw;
-  -ms-grid-columns: 1fr 8vw 1fr;
+  gap: 2vh 3vw;
+  -ms-grid-columns: 1fr 3vw 1fr;
   grid-template-columns: repeat(2, 1fr);
+  padding: 20px 0;
 }
 body .map_container .map__content .icons .grid_item {
   display: -webkit-box;
@@ -539,11 +566,17 @@ body .map_container .map__content .icons .grid_item {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 2vh;
-  padding: 40px 0px;
+  gap: 0.5vh;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid grey;
+  cursor: pointer;
+  padding: 2vh 0;
+  border-radius: 5px;
 }
 body .map_container .map__content .icons .grid_item:hover {
   -webkit-transform: scale(1.1);
@@ -559,7 +592,7 @@ body .map_container .map__content .icons .grid_item .icons {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 0.7vw;
+  gap: 0.5vw;
 }
 body .map_container .map__content .icons .grid_item .icons a {
   text-decoration: none;
@@ -599,4 +632,7 @@ body .map_container .map {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
