@@ -25,7 +25,7 @@ function Testimonials() {
           observeParents={true}
           observer={true}
           loop={true}
-          autoplay={{ delay: 1500 }}
+          autoplay={{ delay: 2500 }}
         >
           <SwiperSlide>
             <Testimonial

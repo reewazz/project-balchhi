@@ -2,21 +2,22 @@ import React from "react";
 import { Rating } from "@mui/material";
 import DoubleQuotesLIcon from "remixicon-react/DoubleQuotesLIcon"
 import DoubleQuotesRIcon from "remixicon-react/DoubleQuotesRIcon"
+import {Typography} from "@mui/material"
 
 function Testimonial({ name, image,review }) {
   return (
     <div className="testimonial">
       <div className="about">
         <img src={image} alt={`${name}`} />
-        <h3>{name}</h3>
-        <em>Full Stack Web Developer</em>
+        <Typography variant="h3" component={"h3"}>{name}</Typography>
+        <Typography component={"p"} variant="em">Full Stack Web Developer</Typography>
         {/* <Rating name="read-only" value={4} readOnly /> */}
       </div>
-      <p><i className="icon"><DoubleQuotesLIcon /></i> 
+      <Typography variant="p" component={"p"}><i className="icon"><DoubleQuotesLIcon /></i> 
         {/*  */}
         {review}
         <i className="icon"><DoubleQuotesRIcon /></i> 
-      </p>
+      </Typography>
     </div>
   );
 }

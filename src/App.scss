@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all .3s ease-in-out;
 }
 
 $color:orangered;
@@ -112,9 +113,10 @@ body {
 
       h1{
         font-size: 3rem;
+        font-weight: 500;
       }
       p{
-        font-size: 1.4rem;
+        font-size: 1.5rem;
       }
       .blob,
       .blob1 {
@@ -185,6 +187,7 @@ body {
 
       h2 {
         font-size: 2.2rem;
+        font-weight: bold;
         .span {
           color: orangered;
         }
@@ -279,10 +282,15 @@ body {
       }
 
       p{
+        font-size: 1.1rem;
         .icon{
           padding: .5vw .5vh;
           color: orangered;
         }
+      }
+
+      h3{
+        font-size: 1.5rem;
       }
 
       img {
@@ -309,11 +317,13 @@ body {
     .content {
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 10px;
       font-size: 1.2rem;
-
-      span {
-        color: orangered;
+      h1{
+        font-size: 2.2rem;
+        span {
+          color: orangered;
+        }
       }
       button {
         background: orangered;
@@ -340,6 +350,9 @@ body {
       gap: 10px;
       p {
         font-size: 1.1rem;
+      }
+      h1{
+        font-size: 3.2rem;
       }
     }
 
@@ -490,6 +503,7 @@ body {
       flex-direction: column;
       // gap: 2vh;
       h1{
+        font-size: 2.2rem;
         span {
           color: orangered;
         }

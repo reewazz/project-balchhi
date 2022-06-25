@@ -4,6 +4,8 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .container {
@@ -137,9 +139,10 @@ body .hero__container .about {
 }
 body .hero__container .about h1 {
   font-size: 3rem;
+  font-weight: 500;
 }
 body .hero__container .about p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 }
 body .hero__container .about .blob,
 body .hero__container .about .blob1 {
@@ -211,6 +214,7 @@ body .facilities__container .about {
 }
 body .facilities__container .about h2 {
   font-size: 2.2rem;
+  font-weight: bold;
 }
 body .facilities__container .about h2 .span {
   color: orangered;
@@ -316,9 +320,15 @@ body .Testimonials__container .container_ .testimonial .about {
     width: 100%;
   }
 }
+body .Testimonials__container .container_ .testimonial p {
+  font-size: 1.1rem;
+}
 body .Testimonials__container .container_ .testimonial p .icon {
   padding: 0.5vw 0.5vh;
   color: orangered;
+}
+body .Testimonials__container .container_ .testimonial h3 {
+  font-size: 1.5rem;
 }
 body .Testimonials__container .container_ .testimonial img {
   height: 12vh;
@@ -347,10 +357,13 @@ body .about_container .content {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 30px;
+  gap: 10px;
   font-size: 1.2rem;
 }
-body .about_container .content span {
+body .about_container .content h1 {
+  font-size: 2.2rem;
+}
+body .about_container .content h1 span {
   color: orangered;
 }
 body .about_container .content button {
@@ -387,6 +400,9 @@ body .gallery__container .about {
 }
 body .gallery__container .about p {
   font-size: 1.1rem;
+}
+body .gallery__container .about h1 {
+  font-size: 3.2rem;
 }
 body .gallery__container .swiperContainer {
   width: 100%;
@@ -553,6 +569,9 @@ body .map_container .content {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+body .map_container .content h1 {
+  font-size: 2.2rem;
 }
 body .map_container .content h1 span {
   color: orangered;
