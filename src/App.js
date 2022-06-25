@@ -9,17 +9,19 @@ import Gallery from "./components/Gallery";
 import Map from "./components/Map";
 import {ThemeProvider } from "@material-ui/core/styles";
 import Theme from "./Theme/Theme";
+import {Typography} from "@mui/material"
 
 function App() {
+  console.log(window.innerWidth)
   return (
     <ThemeProvider theme={Theme}>
       <Navbar />
       <Hero />
       <Facilities />
       <About />
-      <h1 style={{ textAlign: "center" }}>
+      <Typography variant="h1" component={"h1"} style={{ textAlign: "center",fontSize:"3rem" }}>
         What our <span style={{ color: "orangered" }}>Customer</span> say!
-      </h1>
+      </Typography>
       <Testimonials />
       <Gallery />
       <Map />

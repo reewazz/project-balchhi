@@ -1,5 +1,6 @@
 import React from "react";
 import AOS from "aos";
+import { Typography } from "@mui/material";
 
 export default function Map() {
   React.useEffect(() => {
@@ -9,14 +10,14 @@ export default function Map() {
   return (
     <div className="map_container" id="map__container" data-aos="fade-right">
       <div className="content">
-        <h1>
+        <Typography variant="h1" component={"h1"}>
           Contact <span> Us</span>
-        </h1>
-        <p>
+        </Typography>
+        <Typography>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt cum
           expedita dolor, est, ab sequi et debitis corporis consequuntur quos
           officia dicta exercitationem culpa!
-        </p>
+        </Typography>
       </div>
       <div className="wrapper">
         <div className="map__content left">
@@ -24,7 +25,7 @@ export default function Map() {
             <div className="grid_item">
               <i class="ri-map-pin-line"></i>
                 {" "}
-                <b>Address :</b> :{" "}
+                <b>Address :</b>{" "}
               <span>
               </span>
               <p>Tilottama -5 ,Manigram</p>
