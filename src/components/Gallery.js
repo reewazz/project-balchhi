@@ -3,12 +3,13 @@ import "react-multi-carousel/lib/styles.css";
 import about from "../images/about.jpg";
 import hero from "../images/hero.jpg";
 import hero1 from "../images/hero1.jpg";
+import pokhari from "../images/pokhari.jpg";
 import Aos from "aos";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation,EffectFade } from "swiper";
+import { Navigation, EffectFade } from "swiper";
 import "swiper/scss";
 import "swiper/scss/navigation";
-import "swiper/css/effect-fade"
+import "swiper/css/effect-fade";
 import { Typography } from "@mui/material";
 
 const images = [about, hero, hero1, hero, about];
@@ -27,7 +28,9 @@ function Gallery() {
         <Typography variant="h1" component={"h1"}>
           Our <span style={{ color: "orangered" }}>popular</span> places
         </Typography>
-        <Typography variant="p" component={"p"}>Our target is to provide you with a best quality service</Typography>
+        <Typography variant="p" component={"p"}>
+          Our target is to provide you with a best quality service
+        </Typography>
       </div>
       <div className="swiperContainer">
         <Swiper
@@ -43,9 +46,9 @@ function Gallery() {
           }}
           className="mySwiper"
           slidesPerView={3}
-          spaceBetween= {10}
-          navigation = {true}
-          modules={[Navigation,EffectFade]}
+          spaceBetween={10}
+          navigation={true}
+          modules={[Navigation, EffectFade]}
         >
           {images.map((image, i) => {
             return (
@@ -53,11 +56,12 @@ function Gallery() {
                 <div key={i} className="image-container">
                   <img src={image} alt={`{${i} -image}`} />
                 </div>
-              </SwiperSlide>              
+              </SwiperSlide>
             );
           })}
         </Swiper>
       </div>
+
     </div>
   );
 }
