@@ -88,6 +88,13 @@ body .nav.shadow {
           backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
+body .nav .toggleBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 1.1rem;
+}
 body .nav .logo img {
   height: 10vh;
   width: 5vw;
@@ -573,7 +580,6 @@ body .footer_container .wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
 }
 @media (max-width: 425px) {
   body .footer_container .wrapper {
@@ -631,14 +637,6 @@ body .footer_container .wrapper .left .icons .ri-instagram-line:hover {
 }
 body .footer_container .wrapper .left .icons .ri-whatsapp-line:hover {
   color: #25d366;
-}
-body .footer_container .wrapper .left .copyright {
-  position: absolute;
-  left: 0;
-  top: 98%;
-  padding: 10px 0;
-  text-align: center;
-  width: 100%;
 }
 body .footer_container .wrapper .right {
   display: -webkit-box;

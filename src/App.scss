@@ -67,6 +67,14 @@ body {
       border: 1px solid rgba(255, 255, 255, 0.3);
     }
 
+    .toggleBtn{
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      margin-left: 10px;
+      font-size: 1.1rem;
+    }
+
     .logo img {
       height: 10vh;
       width: 5vw;
@@ -490,7 +498,7 @@ body {
       width: 80%;
       margin: auto;
       justify-content: space-between;
-      position: relative;
+      // position: relative;
 
       @media (max-width:425px) {
           flex-direction: column;
@@ -539,14 +547,14 @@ body {
             }
           }
         }
-        .copyright{
-          position: absolute;
-          left: 0;
-          top: 98%;
-          padding: 10px 0;
-          text-align: center;
-          width: 100%;
-        }
+        // .copyright{
+        //   position: absolute;
+        //   left: 0;
+        //   top: 98%;
+        //   padding: 10px 0;
+        //   text-align: center;
+        //   width: 100%;
+        // }
       }
       .right {
         

@@ -4,7 +4,7 @@ import balchhiLogo from "../images/balchhiLogo.jpg";
 import { Link, animateScroll } from "react-scroll";
 import { useMediaQuery } from "@material-ui/core";
 import { motion } from "framer-motion";
-import MenuFillIcon from "remixicon-react/MenuFillIcon"
+import MenuIcon from "@mui/icons-material/Menu";
 
 export default function Navbar() {
   const [isopen, setIsopen] = React.useState(true);
@@ -14,8 +14,8 @@ export default function Navbar() {
   const media = useMediaQuery("(max-width:425px)");
 
   const variants = {
-    open: { opacity: 1,y:"10%" },
-    closed: { opacity:0,y:0 },
+    open: { opacity: 1, y: "10%" },
+    closed: { opacity: 0, y: 0 },
   };
 
   return (
@@ -30,7 +30,7 @@ export default function Navbar() {
               </a>
             </div>
             <div className="mid">
-              <Link smooth={true} onClick={animateScroll.scrollToTop} to = "">
+              <Link smooth={true} onClick={animateScroll.scrollToTop} to="">
                 <div className={scrollPosition < 627 ? "btn active" : "btn"}>
                   Home
                 </div>
@@ -82,8 +82,11 @@ export default function Navbar() {
         <motion.nav
           animate={isopen ? "open" : "closed"}
           variants={variants}
-        > 
-          <MenuFillIcon/>
+          transition={{ duration: 0.5 }}
+        >
+          <motion.button className="toggleBtn">
+            <MenuIcon style={{ background: "transparent" }} />
+          </motion.button>
         </motion.nav>
       )}
     </div>
