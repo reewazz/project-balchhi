@@ -23,7 +23,7 @@ export default function Map() {
         <div className="map__content left">
           <div className="icons">
             <div className="grid_item">
-              <i class="ri-map-pin-line"></i>
+              <i className="ri-map-pin-line"></i>
                 {" "}
                 <b>Address :</b>{" "}
               <span>
@@ -32,7 +32,7 @@ export default function Map() {
 
             </div>
             <div className="grid_item">
-              <i class="ri-phone-line"></i>
+              <i className="ri-phone-line"></i>
               <span>
                 {" "}
                 <b>Call Us :</b>{" "}
@@ -40,7 +40,7 @@ export default function Map() {
               <p>9804409022</p>
             </div>
             <div className="grid_item">
-              <i class="ri-mail-line"></i>
+              <i className="ri-mail-line"></i>
               <span>
                 {" "}
                 <b>Email :</b>{" "}
@@ -55,13 +55,13 @@ export default function Map() {
               </span>
               <div className="icons">
                 <a href="https://www.facebook.com/Balchhireosrt/">
-                  <i class="ri-facebook-fill"></i>
+                  <i className="ri-facebook-fill"></i>
                 </a>
                 <a href="https://www.instagram.com/balchhiresort/">
-                  <i class="ri-instagram-line"></i>
+                  <i className="ri-instagram-line"></i>
                 </a>
-                <a href="#">
-                  <i class="ri-whatsapp-line"></i>
+                <a href="https://web.whatsapp.com/">
+                  <i className="ri-whatsapp-line"></i>
                 </a>
               </div>
             </div>
@@ -73,10 +73,7 @@ export default function Map() {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.016934147103!2d83.47514371506024!3d27.623992182826473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399685151b893a11%3A0x17e1d6499ce964!2sBalchhi%20Resort%20And%20Agro%20Farm%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1655878480303!5m2!1sen!2snp"
                 height="300"
                 style={{ border: "1px solid grey",borderRadius:"5px" }}
-                allowfullscreen={true}
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-                
+                loading="lazy"                
               ></iframe>
             </div>
           </div>
