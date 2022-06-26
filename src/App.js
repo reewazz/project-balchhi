@@ -14,6 +14,7 @@ import {Typography} from "@mui/material"
 function App() {
   console.log(window.innerWidth)
   return (
+    <>
     <ThemeProvider theme={Theme}>
       <Navbar />
       <Hero />
@@ -27,6 +28,8 @@ function App() {
       <Map />
       <Footer />
     </ThemeProvider>
+
+    </>
   );
 }
 

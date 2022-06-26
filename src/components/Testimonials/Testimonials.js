@@ -18,6 +18,14 @@ function Testimonials() {
     <div className="Testimonials__container" data-aos="zoom-in-up">
       <div className="container_">
         <Swiper
+          breakpoints={{
+            425: {
+              slidesPerView: 1,
+            },
+            768:{
+              slidesPerView:2
+            }
+          }}
           slidesPerView={2}
           spaceBetween={5}
           pagination={{ clickable: true }}
@@ -25,7 +33,7 @@ function Testimonials() {
           observeParents={true}
           observer={true}
           loop={true}
-          autoplay={{ delay: 2500 }}
+          autoplay={{ delay: 2500, disableOnInteraction: false }}
         >
           <SwiperSlide>
             <Testimonial

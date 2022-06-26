@@ -21,13 +21,11 @@ function Hero() {
         <div className="about">
           <div className="blob animate__animated animate__pulse animate__infinite	infinite"></div>
           <div className="blob1 animate__animated animate__pulse animate__infinite	infinite"></div>
-          {/* <em>Welcome to balchhi,</em> */}
-          <Typography variant="em" component={"em"}>
+          <Typography variant="p" component={"p"}>
             Welcome to balchhi,
           </Typography>
-          {/* <h1>Probably The Best In The Town!</h1> */}
           <Typography variant="h1" component={"h1"}>
-            Probably The Best In The Town!
+             Probably The Best In The Town!
           </Typography>
           {/* <p>
             We connect like a family with best food.
@@ -67,8 +65,6 @@ function Hero() {
               title="balchhi_video"
             ></iframe>
           </Modal>
-          {/* <div className="blob animate__animated animate__pulse animate__infinite	infinite"></div>
-          <div className="blob1 animate__animated animate__pulse animate__infinite	infinite"></div> */}
         </div>
 
         <div className="image">
