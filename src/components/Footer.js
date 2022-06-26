@@ -1,5 +1,4 @@
 import React from "react";
-import Map from "./Map";
 
 export default function Footer() {
   return (
@@ -22,7 +21,9 @@ export default function Footer() {
               <i className="ri-whatsapp-line"></i>
             </a>
           </div>
-          <span>Copyright &copy; 2022 Balchhi. All Right Reserved</span>
+          <div className="copyright">
+            <span>Copyright &copy; 2022 Balchhi. All Right Reserved</span>
+          </div>
         </div>
 
         <div className="right">
@@ -70,8 +71,12 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div style={{textAlign:"center"}}>
-        <p>Made with <span style={{color:"red",fontSize:"1.5rem"}}>&hearts;</span> by Riwaj & Suraj </p>
+      <div style={{ textAlign: "center" }} className="made">
+        <p>
+          Made with{" "}
+          <span style={{ color: "red", fontSize: "1.5rem" }}>&hearts;</span> by
+          Riwaj & Suraj{" "}
+        </p>
       </div>
     </div>
   );

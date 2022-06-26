@@ -16,6 +16,7 @@
     "framer-motion": "^6.3.13",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-media": "^1.10.0",
     "react-multi-carousel": "^2.8.2",
     "react-responsive-carousel": "^3.2.23",
     "react-scripts": "5.0.1",
