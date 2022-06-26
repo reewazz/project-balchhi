@@ -2,21 +2,19 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import "react-multi-carousel/lib/styles.css";
-import ArrowLeft from "remixicon-react/ArrowLeftFillIcon";
-import ArrowRight from "remixicon-react/ArrowRightFillIcon";
 import about from "../images/about.jpg";
 import hero from "../images/hero.jpg";
 import hero1 from "../images/hero1.jpg";
 import pokhari from "../images/pokhari.jpg";
 import Aos from "aos";
-import { Button } from "@mui/material";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectFade } from "swiper";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/css/effect-fade";
+import { Typography } from "@mui/material";
 
-const images = [about, hero, hero1, hero, about, pokhari];
+const images = [about, hero, hero1, hero, about];
 
 function Gallery() {
   const [initial, setInitial] = useState(0);
@@ -49,10 +47,12 @@ function Gallery() {
   return (
     <div className="gallery__container" data-aos="fade-left">
       <div className="about">
-        <h1>
+        <Typography variant="h1" component={"h1"}>
           Our <span style={{ color: "orangered" }}>popular</span> places
-        </h1>
-        <p>Our target is to provide you with a best quality service</p>
+        </Typography>
+        <Typography variant="p" component={"p"}>
+          Our target is to provide you with a best quality service
+        </Typography>
       </div>
       <div className="swiperContainer">
         <Swiper

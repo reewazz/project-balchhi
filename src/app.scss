@@ -31,7 +31,10 @@ $color: orangered;
 }
 
 body {
-  width: 100vw;
+  // width: 100vw;
+  margin: 0;
+  padding: 0;
+  width: 100%;
   background-color: #f3f3f5;
   overflow-x: hidden;
   // font-family: 'Poppins', sans-serif;
@@ -41,7 +44,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    // width: 100%;
     height: 10vh;
     position: sticky;
     top: 0;
@@ -51,13 +54,18 @@ body {
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       background: #e1e1e1;
     }
-
+    @media (min-width: 425px) and (max-width: 768px) {
+      width: 110%;
+    }
     .logo img {
       height: 10vh;
       width: 5vw;
       background: transparent;
       border-radius: 50%;
       object-fit: cover;
+      @media (min-width: 425px) and (max-width: 768px) {
+        width: 8vw;
+      }
     }
     .mid {
       display: flex;
@@ -65,6 +73,9 @@ body {
       font-weight: bold;
       gap: 65px;
       transition: all 0.1s ease 0s;
+      @media (min-width: 425px) and (max-width: 768px) {
+        gap: 40px;
+      }
 
       .active {
         border-bottom: 3px solid orangered;
@@ -89,6 +100,9 @@ body {
       text-decoration: none;
       text-align: center;
       cursor: pointer;
+      @media (min-width: 425px) and (max-width: 768px) {
+        font-size: 1rem;
+      }
     }
     // import "./App.scss"
   }
@@ -101,6 +115,9 @@ body {
     font-size: 2.03vh;
     z-index: 1;
     background: transparent;
+    @media (min-width: 425px) and (max-width: 768px) {
+      width: 110%;
+    }
 
     .about {
       display: flex;
@@ -111,9 +128,19 @@ body {
 
       h1 {
         font-size: 3rem;
+        font-weight: 600;
+        @media (min-width: 1024px) {
+          font-size: 2.5rem;
+        }
+        @media (min-width: 425px) and (max-width: 768px) {
+          font-size: 1rem;
+        }
       }
       p {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
+        @media (min-width: 425px) and (max-width: 768px) {
+          font-size: 1.2rem;
+        }
       }
       .blob,
       .blob1 {
@@ -174,17 +201,34 @@ body {
     padding: 70px 0;
     background: transparent;
 
+    @media (min-width: 425px) and (max-width: 768px) {
+      width: 110%;
+      .container {
+        gap: 3vw;
+      }
+    }
+
     .about {
       width: 50%;
       display: flex;
       flex-direction: column;
       gap: 20px;
       justify-content: center;
+      @media (min-width: 425px) and (max-width: 768px) {
+        width: 40vw;
+        justify-content: flex-start;
+        gap: 18px;
+        align-items: flex-start;
+      }
 
       h2 {
         font-size: 2.2rem;
+        font-weight: bold;
         .span {
           color: orangered;
+        }
+        @media (min-width: 425px) and (max-width: 768px) {
+          font-size: 2rem;
         }
       }
       p {
@@ -199,6 +243,12 @@ body {
         border-radius: 1.5vw;
         cursor: pointer;
         font-size: 1rem;
+        @media (min-width: 1024px) {
+          width: 10vw;
+        }
+        @media (min-width: 425px) and (max-width: 768px) {
+          width: 18vw;
+        }
       }
     }
 
@@ -206,6 +256,10 @@ body {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
+      @media (min-width: 425px) and (max-width: 768px) {
+        width: 50%;
+        grid-template-columns: repeat(3, 1fr);
+      }
 
       div {
         width: 15.2vh;
@@ -224,6 +278,12 @@ body {
         .icon {
           color: orangered;
         }
+        @media (min-width: 1024px) {
+          width: 15.5vh;
+        }
+        @media (min-width: 425px) and (max-width: 768px) {
+          width: 18vh;
+        }
       }
     }
   }
@@ -234,6 +294,9 @@ body {
     // margin: auto;
     // width: 100%;
     background: transparent;
+    @media (min-width: 425px) and (max-width: 768px) {
+      width: 110%;
+    }
 
     .container_ {
       display: flex;
@@ -276,10 +339,15 @@ body {
         }
 
         p {
+          font-size: 1.1rem;
           .icon {
             padding: 0.5vw 0.5vh;
             color: orangered;
           }
+        }
+
+        h3 {
+          font-size: 1.5rem;
         }
 
         img {
@@ -297,20 +365,34 @@ body {
     // gap: 140px;
     margin: 5.08vh 0;
     flex-wrap: wrap;
+    @media (min-width: 425px) and (max-width: 768px) {
+      width: 110%;
+    }
 
     .image img {
       height: 60vh;
       width: 30vw;
       // object-fit: contain;
+      @media (min-width: 425px) and (max-width: 768px) {
+        height: 80vh;
+        width: 40vw;
+      }
     }
     .content {
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 10px;
       font-size: 1.2rem;
-
-      span {
-        color: orangered;
+      h1 {
+        font-size: 2.2rem;
+        span {
+          color: orangered;
+        }
+      }
+      p {
+        @media (min-width: 425px) and (max-width: 768px) {
+          font-size: 1rem;
+        }
       }
       button {
         background: orangered;
@@ -320,6 +402,9 @@ body {
         border-radius: 30px;
         cursor: pointer;
         font-size: 1rem;
+      }
+      @media (min-width: 1024px) {
+        font-size: 1.1rem;
       }
     }
   }
@@ -337,6 +422,9 @@ body {
       gap: 10px;
       p {
         font-size: 1.1rem;
+      }
+      h1 {
+        font-size: 3.2rem;
       }
     }
 
@@ -402,6 +490,9 @@ body {
     padding: 3vh 2vw;
     background: black;
     flex-direction: column;
+    @media (min-width: 425px) and (max-width: 768px) {
+      width: 110%;
+    }
     .wrapper {
       display: flex;
       width: 80%;
@@ -479,11 +570,15 @@ body {
     justify-content: space-between;
     // gap: 2vw;
     flex-direction: column;
+    @media (min-width: 425px) and (max-width: 768px) {
+      width: 110%;
+    }
     .content {
       display: flex;
       flex-direction: column;
       // gap: 2vh;
       h1 {
+        font-size: 2.2rem;
         span {
           color: orangered;
         }
@@ -514,6 +609,9 @@ body {
           cursor: pointer;
           padding: 2vh 0;
           border-radius: 5px;
+          @media (min-width: 425px) and (max-width: 768px) {
+            width: 15vw;
+          }
           &:hover {
             transform: scale(1.1);
           }
@@ -543,6 +641,15 @@ body {
                 color: #25d366;
               }
             }
+          }
+        }
+      }
+
+      .right {
+        .map {
+          @media (min-width: 425px) and (max-width: 768px) {
+            height: 3vh;
+            width: 2vw;
           }
         }
       }
