@@ -5,9 +5,12 @@ import { Link, animateScroll } from "react-scroll";
 import { useMediaQuery } from "@material-ui/core";
 import { motion } from "framer-motion";
 import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+import MobileNavLinks from "./MobileNavLinks";
 
 export default function Navbar() {
   const [isopen, setIsopen] = React.useState(true);
+  const [show, setShow] = React.useState(true);
   let scrollPosition = UpdateScrollPosition();
   console.log(scrollPosition);
 
@@ -19,6 +22,7 @@ export default function Navbar() {
   };
 
   return (
+    <>
     <div className={scrollPosition > 27 ? "nav shadow" : "nav"}>
       {!media ? (
         <div className={scrollPosition > 27 ? "nav shadow" : "nav"}>
@@ -84,11 +88,24 @@ export default function Navbar() {
           variants={variants}
           transition={{ duration: 0.5 }}
         >
-          <motion.button className="toggleBtn">
-            <MenuIcon style={{ background: "transparent" }} />
+          <motion.button
+            className="toggleBtn"
+            onClick={() => setShow((show) => !show)}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            {show ? (
+              <MenuIcon style={{ background: "transparent" }} />
+            ) : (
+              <CloseIcon style={{ background: "transparent" }} />
+            )}
           </motion.button>
         </motion.nav>
       )}
     </div>
+    <div>
+      {!show && <MobileNavLinks animate/>}
+    </div>
+    </>
   );
 }

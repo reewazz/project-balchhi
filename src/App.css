@@ -694,7 +694,9 @@ body .footer_container .wrapper .right .Help {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  body .footer_container .wrapper .right .home, body .footer_container .wrapper .right .About, body .footer_container .wrapper .right .Help {
+  body .footer_container .wrapper .right .home,
+body .footer_container .wrapper .right .About,
+body .footer_container .wrapper .right .Help {
     width: 90vw;
   }
 }
@@ -848,4 +850,42 @@ body .map_container .map {
     width: 350px;
     height: 400px;
   }
+}
+
+.mobileNavContainer {
+  height: 90vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  color: #000;
+}
+.mobileNavContainer .mobileNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  color: #000;
+}
+.mobileNavContainer .mobileNav .link {
+  width: 100vw;
+  text-align: center;
+  color: #000;
 }
