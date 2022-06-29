@@ -319,11 +319,6 @@ body .facilities__container .about button {
     width: 40%;
   }
 }
-@media (min-width: 1024px) {
-  body .facilities__container .about button {
-    width: 12vw;
-  }
-}
 body .facilities__container .facilities {
   display: -ms-grid;
   display: grid;
