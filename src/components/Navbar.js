@@ -13,7 +13,7 @@ export default function Navbar() {
   const [isopen, setIsopen] = React.useState(true);
   const [show, setShow] = React.useState(true);
   let scrollPosition = UpdateScrollPosition();
-  // console.log(scrollPosition);
+  console.log(scrollPosition);
 
   const media = useMediaQuery("(max-width:425px)");
 
@@ -56,22 +56,7 @@ export default function Navbar() {
                     Facilities
                   </div>
                 </Link>
-                <Link
-                  to="facilities__container"
-                  smooth={true}
-                  duration={1000}
-                  offset={-100}
-                >
-                  <div
-                    className={
-                      scrollPosition >= 627 && scrollPosition < 947
-                        ? "btn active"
-                        : "btn"
-                    }
-                  >
-                    Service
-                  </div>
-                </Link>
+      
                 <Link
                   to="about__container"
                   smooth={true}
