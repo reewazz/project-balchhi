@@ -9,7 +9,8 @@ import CloseIcon from "@mui/icons-material/Close";
 import MobileNavLinks from "./MobileNavLinks";
 
 export default function Navbar() {
-  const isopen = true;
+  // eslint-disable-next-line
+  const [isopen, setIsopen] = React.useState(true);
   const [show, setShow] = React.useState(true);
   let scrollPosition = UpdateScrollPosition();
   console.log(scrollPosition);
@@ -52,9 +53,10 @@ export default function Navbar() {
                         : "btn"
                     }
                   >
-                    Service
+                    Facilities
                   </div>
                 </Link>
+      
                 <Link
                   to="about__container"
                   smooth={true}

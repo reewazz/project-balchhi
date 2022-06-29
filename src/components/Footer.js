@@ -17,12 +17,10 @@ export default function Footer() {
             <a href="https://www.instagram.com/balchhiresort/">
               <i className="ri-instagram-line"></i>
             </a>
-            <a href="#">
               <i className="ri-whatsapp-line"></i>
-            </a>
           </div>
           <div className="copyright">
-            <span>Copyright &copy; 2022 Balchhi. All Right Reserved</span>
+            
           </div>
         </div>
 
@@ -30,52 +28,35 @@ export default function Footer() {
           <div className="home">
             <b>Home</b>
             <ul>
-              <a href="#">
                 <li>Booking</li>
-              </a>
-              <a href="#">
                 <li>Facilities</li>
-              </a>
-              <a href="#">
                 <li>Location</li>
-              </a>
-              <a href="#">
                 <li>Service</li>
-              </a>
             </ul>
           </div>
           <div className="About">
             <b>About Us</b>
             <ul>
-              <a href="#">
                 <li>FAQ</li>
-              </a>
-              <a href="#">
                 <li>Company</li>
-              </a>
-              <a href="#">
                 <li>Statistic</li>
-              </a>
             </ul>
           </div>
           <div className="Help">
             <b>Help</b>
             <ul>
-              <a href="#">
                 <li>How it Work?</li>
-              </a>
-              <a href="#">
                 <li>Desk Help</li>
-              </a>
             </ul>
           </div>
         </div>
       </div>
       <div style={{ textAlign: "center" }} className="made">
         <p>
+        <span>Copyright &copy; 2022 Balchhi. All Right Reserved</span>
           Made with{" "}
-          <span style={{ color: "red", fontSize: "1.5rem" }}>&hearts;</span> by
-          Riwaj & Suraj{" "}
+          <span style={{ color: "red", fontSize: "1rem" }}>&hearts;</span> by
+          <a href="https://theboringschool.org" target="_blank" rel="noreferrer">The Boring School</a>
         </p>
       </div>
     </div>
