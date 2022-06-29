@@ -11,7 +11,7 @@ function Testimonial({ name, image,review }) {
         <img src={image} alt={`${name}`} />
         <Typography variant="h3" component={"h3"}>{name}</Typography>
         <Typography component={"p"} variant="em">Full Stack Web Developer</Typography>
-        {/* <Rating name="read-only" value={4} readOnly /> */}
+         <Rating name="read-only" value={4} readOnly /> 
       </div>
       <Typography variant="p" component={"p"}><i className="icon"><DoubleQuotesLIcon /></i> 
         {/*  */}
