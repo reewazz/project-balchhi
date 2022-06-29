@@ -87,10 +87,19 @@ body .nav.shadow {
           backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+body .nav .toggleBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 1.1rem;
+
 @media (min-width: 425px) and (max-width: 768px) {
   body .nav {
     width: 110%;
   }
+
 }
 body .nav .logo img {
   height: 10vh;
@@ -205,8 +214,6 @@ body .hero__container .about h1 {
 @media (min-width: 425px) and (max-width: 768px) {
   body .hero__container .about h1 {
     font-size: 1rem;
-=======
-  font-size: 2.8rem;
   font-weight: 600;
 }
 @media (max-width: 425px) {
@@ -222,7 +229,6 @@ body .hero__container .about p {
 @media (min-width: 425px) and (max-width: 768px) {
   body .hero__container .about p {
     font-size: 1.2rem;
-=======
 @media (max-width: 425px) {
   body .hero__container .about p {
     font-size: 1.3rem;
@@ -293,7 +299,6 @@ body .facilities__container {
   }
   body .facilities__container .container {
     gap: 3vw;
-=======
 @media (max-width: 425px) {
   body .facilities__container .container {
     width: 80%;
@@ -693,7 +698,6 @@ body .footer_container .wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
 }
 @media (max-width: 425px) {
   body .footer_container .wrapper {
@@ -752,14 +756,6 @@ body .footer_container .wrapper .left .icons .ri-instagram-line:hover {
 body .footer_container .wrapper .left .icons .ri-whatsapp-line:hover {
   color: #25d366;
 }
-body .footer_container .wrapper .left .copyright {
-  position: absolute;
-  left: 0;
-  top: 98%;
-  padding: 10px 0;
-  text-align: center;
-  width: 100%;
-}
 body .footer_container .wrapper .right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -816,7 +812,9 @@ body .footer_container .wrapper .right .Help {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  body .footer_container .wrapper .right .home, body .footer_container .wrapper .right .About, body .footer_container .wrapper .right .Help {
+  body .footer_container .wrapper .right .home,
+body .footer_container .wrapper .right .About,
+body .footer_container .wrapper .right .Help {
     width: 90vw;
   }
 }
@@ -986,4 +984,42 @@ body .map_container .map {
     width: 350px;
     height: 400px;
   }
+}
+
+.mobileNavContainer {
+  height: 90vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  color: #000;
+}
+.mobileNavContainer .mobileNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  color: #000;
+}
+.mobileNavContainer .mobileNav .link {
+  width: 100vw;
+  text-align: center;
+  color: #000;
 }

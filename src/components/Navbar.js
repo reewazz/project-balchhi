@@ -4,21 +4,25 @@ import balchhiLogo from "../images/balchhiLogo.jpg";
 import { Link, animateScroll } from "react-scroll";
 import { useMediaQuery } from "@material-ui/core";
 import { motion } from "framer-motion";
-import MenuFillIcon from "remixicon-react/MenuFillIcon"
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
+import MobileNavLinks from "./MobileNavLinks";
 
 export default function Navbar() {
   const [isopen, setIsopen] = React.useState(true);
+  const [show, setShow] = React.useState(true);
   let scrollPosition = UpdateScrollPosition();
   console.log(scrollPosition);
 
   const media = useMediaQuery("(max-width:425px)");
 
   const variants = {
-    open: { opacity: 1,y:"10%" },
-    closed: { opacity:0,y:0 },
+    open: { opacity: 1, y: "10%" },
+    closed: { opacity: 0, y: 0 },
   };
 
   return (
+    <>
     <div className={scrollPosition > 27 ? "nav shadow" : "nav"}>
       {!media ? (
         <div className={scrollPosition > 27 ? "nav shadow" : "nav"}>
@@ -30,7 +34,7 @@ export default function Navbar() {
               </a>
             </div>
             <div className="mid">
-              <Link smooth={true} onClick={animateScroll.scrollToTop} to = "">
+              <Link smooth={true} onClick={animateScroll.scrollToTop} to="">
                 <div className={scrollPosition < 627 ? "btn active" : "btn"}>
                   Home
                 </div>
@@ -82,10 +86,26 @@ export default function Navbar() {
         <motion.nav
           animate={isopen ? "open" : "closed"}
           variants={variants}
-        > 
-          <MenuFillIcon/>
+          transition={{ duration: 0.5 }}
+        >
+          <motion.button
+            className="toggleBtn"
+            onClick={() => setShow((show) => !show)}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            {show ? (
+              <MenuIcon style={{ background: "transparent" }} />
+            ) : (
+              <CloseIcon style={{ background: "transparent" }} />
+            )}
+          </motion.button>
         </motion.nav>
       )}
     </div>
+    <div>
+      {!show && <MobileNavLinks animate/>}
+    </div>
+    </>
   );
 }
