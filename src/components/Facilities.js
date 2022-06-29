@@ -43,7 +43,7 @@ const Facilities = () => {
           </div>
           <div>
             <i className="fa-solid fa-bolt-lightning icon"></i>
-            <Typography>24hr electricity</Typography>
+            <Typography component="p">24hr electricity</Typography>
           </div>
           <div>
             <i className="fa-solid fa-person-swimming icon"></i>
@@ -52,6 +52,10 @@ const Facilities = () => {
           <div>
             <i className="fa-solid fa-utensils icon"></i>
             <Typography>Dinner</Typography>
+          </div>
+          <div>
+            <i className="fa-solid fa-utensils icon"></i>
+            <Typography>Others</Typography>
           </div>
         </div>
       </div>
