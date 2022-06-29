@@ -6,6 +6,7 @@ import { Modal } from "@mui/material";
 
 function Hero() {
   const [open, setOpen] = React.useState(false);
+  
   const handleClick = () => {
     setOpen(true);
   };
@@ -21,29 +22,19 @@ function Hero() {
           <div className="blob animate__animated animate__pulse animate__infinite	infinite"></div>
           <div className="blob1 animate__animated animate__pulse animate__infinite	infinite"></div>
 
-          <Typography variant="p" component={"p"}>
+          <Typography className="greeting" variant="p" component={"p"}>
             Welcome to balchhi,
           </Typography>
           <Typography variant="h1" component={"h1"}>
-             Probably The Best In The Town!
+             Enjoy Your Vacation <br/> &amp; Remember Trips!
           </Typography>
-          {/* <p>
-            We connect like a family with best food.
-          </p> */}
           <Typography component={"p"} variant="p">
-            {" "}
             We connect like a family with best food.
           </Typography>
 
           <button onClick={handleClick}>
-            {/* <a
-              href="https://www.youtube.com/watch?v=wTULrEWmNqs"
-              target={"_blank"}
-              rel="noreferrer"
-            > */}
             <PlayCircleIcon className="icon" style={{ color: "orangered" }} />
-            {/* </a> */}
-            <Typography> Watch video</Typography>
+            <Typography> Watch Video</Typography>
           </button>
           <Modal
             open={open}

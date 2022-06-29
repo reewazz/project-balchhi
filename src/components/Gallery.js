@@ -1,10 +1,8 @@
-import React,{useEffect} from "react";
+import React from "react";
 import "react-multi-carousel/lib/styles.css";
 import about from "../images/about.jpg";
 import hero from "../images/hero.jpg";
 import hero1 from "../images/hero1.jpg";
-import pokhari from "../images/pokhari.jpg";
-import Aos from "aos";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectFade } from "swiper";
 import "swiper/scss";
@@ -15,21 +13,14 @@ import { Typography } from "@mui/material";
 const images = [about, hero, hero1, hero, about];
 
 function Gallery() {
-  useEffect(() => {
-    Aos.init({
-      duration: 2000,
-    });
-  }, []);
-
-
   return (
-    <div className="gallery__container" data-aos="fade-left">
+    <div className="gallery__container" data-aos="fade-up">
       <div className="about">
         <Typography variant="h1" component={"h1"}>
           Our <span style={{ color: "orangered" }}>popular</span> places
         </Typography>
         <Typography variant="p" component={"p"}>
-          Our target is to provide you with a best quality service
+          Our target is to provide you with a best quality service.
         </Typography>
       </div>
       <div className="swiperContainer">
