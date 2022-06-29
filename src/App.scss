@@ -130,6 +130,10 @@ body {
     background: transparent;
     margin: 30px 0;
 
+    @media (max-width:768px){
+      // margin-bottom: 50px;
+    }
+
     .about {
       display: flex;
       flex-direction: column;
@@ -154,8 +158,8 @@ body {
         font-weight: 600;
         line-height: 1.2;
 
-        @media (max-width: 425px) {
-          font-size: 2.2rem;
+        @media (max-width: 768px) {
+          font-size: 3.2rem;
         }
       }
       p {
@@ -213,9 +217,9 @@ body {
       width: 33vw;
       // border-radius: 10px;
 
-      @media (max-width: 425px) {
+      @media (max-width: 768px) {
         width: 100%;
-        padding: 10px 0;
+        margin-top: 50px;
       }
     }
   }
@@ -228,7 +232,13 @@ body {
     padding: 70px 0;
     background: transparent;
 
-    @media (max-width: 425px) {
+    @media (max-width: 768px) {
+      &{
+       padding-top: 0; 
+       margin-top: 50px;
+       padding-bottom: 0;
+      }
+
       .container {
         width: 80%;
         display: flex;
@@ -257,14 +267,18 @@ body {
         .span {
           color: orangered;
         }
-        @media (max-width: 425px) {
-          font-size: 2rem;
+        @media (max-width: 768px) {
+          font-size: 2.8rem;
         }
       }
 
       p {
         font-size: 1.3rem;
         margin-bottom: 10px;
+
+        @media (max-width:768px){
+          margin: 15px 0;
+        }
       }
 
       button {
@@ -278,8 +292,10 @@ body {
         cursor: pointer;
         font-size: 1rem;
 
-        @media (max-width: 425px) {
-          width: 40%;
+        @media (max-width: 768px) {
+          max-width: 50vw;
+          width: 100%;
+          margin-bottom: 30px;
         }
       }
     }
@@ -289,7 +305,7 @@ body {
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
 
-      @media (max-width: 425px) {
+      @media (max-width: 768px) {
         padding: 10px;
         grid-template-columns: repeat(2, 1fr);
       }
@@ -347,8 +363,9 @@ body {
         border-radius: 5px;
         gap: 15px;
 
-        @media (max-width: 425px) {
+        @media (max-width: 768px) {
           flex-wrap: wrap;
+          width: 80vw;
         }
 
         &:hover {
@@ -400,20 +417,26 @@ body {
   // @section => about container
   .about_container {
     display: flex;
-    margin: 5.08vh 0;
-    flex-wrap: wrap;
+    margin: 50px 0;
     align-items: center;
 
     .container__{
       align-items: center;
+
+      @media (max-width:768px){
+        flex-direction: column-reverse;
+        gap: 45px;
+      }
     }
 
     .image img {
       height: 60vh;
       width: 30vw;
       object-fit: cover;
-      @media (max-width: 425px) {
-        width: 100%;
+
+      @media (max-width: 768px) {
+        width: 80vw;
+        height: 40vh;
       }
     }
 
@@ -425,6 +448,7 @@ body {
 
       h1 {
         font-size: 3.5rem;
+
         span {
           color: orangered;
         }
@@ -439,6 +463,11 @@ body {
         border-radius: 10px;
         cursor: pointer;
         font-size: 1rem;
+
+        @media (max-width: 768px) {
+          max-width: 50vw;
+          width: 100%;
+        }
       }
     }
   }
@@ -452,6 +481,12 @@ body {
     margin-bottom: 60px;
     gap: 20px;
     padding: 30px 0;
+
+    @media (max-width: 768px){
+      margin-top: 0;
+      padding-top: 0;
+      margin-bottom: 20px;
+    }
 
     .about {
       display: flex;
@@ -532,40 +567,45 @@ body {
   .footer_container {
     color: white;
     display: flex;
-    padding: 3vh 2vw;
+    padding: 50px 2vw;
     background: black;
     flex-direction: column;
+
+    @media (max-width: 768px){
+      padding: 50px 0;
+    }
+
     .wrapper {
       display: flex;
-      width: 80%;
+      width: 80vw;
       margin: auto;
-      justify-content: space-between;
-      // position: relative;
+      gap: 20px;
 
-      @media (max-width: 425px) {
+      @media (max-width: 768px) {
         flex-direction: column;
-        width: 90%;
+        width: 80vw;
       }
 
       .left {
         display: flex;
         flex-direction: column;
-        gap: 2vh;
-        width: 30vw;
-        @media (max-width: 425px) {
-          width: 100vw;
+        gap: 20px;
+        width: 40vw;
+
+        @media (max-width: 768px) {
+          width: 80vw;
           align-items: center;
           justify-content: center;
         }
+
         p {
-          width: 15vw;
-          @media (max-width: 425px) {
-            width: 90vw;
+          @media (max-width: 768px) {
+            width: 80vw;
           }
         }
         .icons {
           display: flex;
-          gap: 0.7vw;
+          gap: 20px;
 
           i {
             // background: white;
@@ -592,6 +632,11 @@ body {
        
       }
       .right {
+        ul{
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
         li {
           list-style: none;
         }
@@ -599,31 +644,33 @@ body {
           display: flex;
           flex-direction: column;
           gap: 1vh;
+           margin: 5px 0;
         }
         .About {
           display: flex;
           flex-direction: column;
           gap: 1vh;
+           margin: 5px 0;
         }
         .Help {
           display: flex;
           flex-direction: column;
           gap: 1vh;
+           margin: 5px 0;
         }
         display: flex;
         gap: 2vw;
         justify-content: center;
-        @media (max-width: 425px) {
-          flex-direction: column;
-          width: 100vw;
-          align-items: center;
+
+        @media (max-width: 768px) {
+          width: 80vw;
+          align-items: flex-start;
           justify-content: center;
+
           .home,
           .About,
           .Help {
             width: 90vw;
-            // align-items: center;
-            // justify-content: center;
           }
         }
       }
@@ -633,6 +680,8 @@ body {
       color: white;
     }
     .made {
+      margin-top: 25px;
+
       @media (max-width: 425px) {
         display: none;
       }
@@ -646,6 +695,10 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+
+    @media (max-width: 768px){
+      margin-bottom: 40px;
+    }
 
     .content {
       display: flex;
@@ -672,7 +725,7 @@ body {
       justify-content: space-between;
       align-items: center;
 
-      @media (max-width: 425px) {
+      @media (max-width: 768px) {
         flex-direction: column;
         align-items: flex-start;
         justify-content: left;
@@ -749,9 +802,11 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      @media (max-width: 425px) {
+
+      @media (max-width: 768px) {
         padding: 10px 0;
-        width: 350px;
+        padding-bottom: 0;
+        width: 80vw;
         height: 400px;
       }
     }
