@@ -6,6 +6,7 @@ import laxman from "../../images/laxman.png";
 import riwaj from "../../images/riwaj.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper";
+import Rating from "@mui/material/Rating";
 import "swiper/scss";
 import "swiper/scss/pagination";
 

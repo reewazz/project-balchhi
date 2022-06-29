@@ -3,7 +3,6 @@ import PlayCircleIcon from "@mui/icons-material/PlayCircle";
 import hero from "../images/hero1.jpg";
 import { Typography } from "@mui/material";
 import { Modal } from "@mui/material";
-import "animate.css";
 
 function Hero() {
   const [open, setOpen] = React.useState(false);

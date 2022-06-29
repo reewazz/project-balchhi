@@ -9,7 +9,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import MobileNavLinks from "./MobileNavLinks";
 
 export default function Navbar() {
-  const [isopen, setIsopen] = React.useState(true);
+  const isopen = true;
   const [show, setShow] = React.useState(true);
   let scrollPosition = UpdateScrollPosition();
   console.log(scrollPosition);
@@ -23,89 +23,89 @@ export default function Navbar() {
 
   return (
     <>
-    <div className={scrollPosition > 27 ? "nav shadow" : "nav"}>
-      {!media ? (
-        <div className={scrollPosition > 27 ? "nav shadow" : "nav"}>
-          <div className="container">
-            <div className="logo">
+      <div className={scrollPosition > 27 ? "nav shadow" : "nav"}>
+        {!media ? (
+          <div className={scrollPosition > 27 ? "nav shadow" : "nav"}>
+            <div className="container">
+              <div className="logo">
+                <a href="/">
+                  {" "}
+                  <img src={balchhiLogo} alt="logo" />
+                </a>
+              </div>
+              <div className="mid">
+                <Link smooth={true} onClick={animateScroll.scrollToTop} to="">
+                  <div className={scrollPosition < 627 ? "btn active" : "btn"}>
+                    Home
+                  </div>
+                </Link>
+                <Link
+                  to="facilities__container"
+                  smooth={true}
+                  duration={1000}
+                  offset={-100}
+                >
+                  <div
+                    className={
+                      scrollPosition >= 627 && scrollPosition < 947
+                        ? "btn active"
+                        : "btn"
+                    }
+                  >
+                    Service
+                  </div>
+                </Link>
+                <Link
+                  to="about__container"
+                  smooth={true}
+                  duration={1000}
+                  offset={-150}
+                >
+                  <div
+                    className={
+                      scrollPosition >= 947 && scrollPosition < 2500
+                        ? "btn active"
+                        : "btn"
+                    }
+                  >
+                    About Us
+                  </div>
+                </Link>
+                <Link to="map__container" smooth={true} duration={2000}>
+                  <div
+                    className={scrollPosition >= 2500 ? "btn active" : "btn"}
+                  >
+                    Contact
+                  </div>
+                </Link>
+              </div>
               <a href="/">
-                {" "}
-                <img src={balchhiLogo} alt="logo" />
+                <div className="contactBtn">Contact Us</div>
               </a>
             </div>
-            <div className="mid">
-              <Link smooth={true} onClick={animateScroll.scrollToTop} to="">
-                <div className={scrollPosition < 627 ? "btn active" : "btn"}>
-                  Home
-                </div>
-              </Link>
-              <Link
-                to="facilities__container"
-                smooth={true}
-                duration={1000}
-                offset={-100}
-              >
-                <div
-                  className={
-                    scrollPosition >= 627 && scrollPosition < 947
-                      ? "btn active"
-                      : "btn"
-                  }
-                >
-                  Service
-                </div>
-              </Link>
-              <Link
-                to="about__container"
-                smooth={true}
-                duration={1000}
-                offset={-150}
-              >
-                <div
-                  className={
-                    scrollPosition >= 947 && scrollPosition < 2500
-                      ? "btn active"
-                      : "btn"
-                  }
-                >
-                  About Us
-                </div>
-              </Link>
-              <Link to="map__container" smooth={true} duration={2000}>
-                <div className={scrollPosition >= 2500 ? "btn active" : "btn"}>
-                  Contact
-                </div>
-              </Link>
-            </div>
-            <a href="/">
-              <div className="contactBtn">Contact Us</div>
-            </a>
           </div>
-        </div>
-      ) : (
-        <motion.nav
-          animate={isopen ? "open" : "closed"}
-          variants={variants}
-          transition={{ duration: 0.5 }}
-        >
-          <motion.button
-            className="toggleBtn"
-            onClick={() => setShow((show) => !show)}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
+        ) : (
+          <motion.nav
+            animate={isopen ? "open" : "closed"}
+            variants={variants}
+            transition={{ duration: 0.5 }}
           >
-            {show ? (
-              <MenuIcon style={{ background: "transparent" }} />
-            ) : (
-              <CloseIcon style={{ background: "transparent" }} />
-            )}
-          </motion.button>
-        </motion.nav>
-      )}
-    </div>
-    <div>
-      {!show && <MobileNavLinks animate/>}
-    </div>
+            <motion.button
+              className="toggleBtn"
+              onClick={() => setShow((show) => !show)}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              {show ? (
+                <MenuIcon style={{ background: "transparent" }} />
+              ) : (
+                <CloseIcon style={{ background: "transparent" }} />
+              )}
+            </motion.button>
+          </motion.nav>
+        )}
+      </div>
+      <div>{!show && <MobileNavLinks animate />}</div>
     </>
   );
 }
