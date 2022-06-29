@@ -31,6 +31,7 @@ $color: orangered;
   margin: auto;
   display: flex;
   justify-content: space-around;
+
   @media (max-width: 425px) {
     flex-wrap: wrap;
   }
@@ -38,7 +39,7 @@ $color: orangered;
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 20px 0 0 0;
   width: 100%;
   background-color: #f3f3f5;
   overflow-x: hidden;
@@ -58,9 +59,8 @@ body {
     top: 0;
     z-index: 9;
     transition: all 0.3s ease-in-out;
+    
     &.shadow {
-      // box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-      // background: #e1e1e1;
       background: rgba(255, 255, 255, 0.2);
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(5px);
@@ -82,6 +82,7 @@ body {
       border-radius: 50%;
       object-fit: cover;
     }
+
     .mid {
       display: flex;
       align-items: center;
@@ -92,6 +93,7 @@ body {
       .active {
         border-bottom: 3px solid orangered;
       }
+
       a {
         text-decoration: none;
         border-radius: 1vh;
@@ -103,8 +105,8 @@ body {
       display: flex;
       align-items: center;
       background: orangered;
-      border-radius: 2.6vw;
-      padding: 0.6vh 1.5vw;
+      border-radius: 10px;
+      padding: 10px 20px;
       color: white;
       font-weight: bold;
     }
@@ -124,7 +126,7 @@ body {
     font-size: 2.03vh;
     z-index: 1;
     background: transparent;
-    // z-index: 1000;
+    margin: 30px 0;
 
     .about {
       display: flex;
@@ -169,9 +171,9 @@ body {
       }
       .blob1 {
         // top: -25vh;
-        top: -10vh;
+        top: 5vh;
         // right: -28vw;
-        right: -10vw;
+        right: -25vw;
         left: auto;
         background-image: url("data:image/svg+xml;utf8, %3Csvg width=%22100%25%22 height=%22100%25%22 viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 %3E %3Cdefs%3E %3Cfilter id=%22grain%22 x=%22-50vw%22 y=%22-50vh%22 width=%22100vw%22 height=%22100vh%22%3E %3CfeFlood flood-color=%22%23ffffff%22 result=%22neutral-gray%22 %2F%3E %3CfeTurbulence in=%22neutral-gray%22 type=%22fractalNoise%22 baseFrequency=%222.5%22 numOctaves=%22100%22 stitchTiles=%22stitch%22 result=%22noise%22 %2F%3E %3CfeColorMatrix in=%22noise%22 type=%22saturate%22 values=%220%22 result=%22destaturatedNoise%22 %3E%3C%2FfeColorMatrix%3E %3CfeComponentTransfer in=%22desaturatedNoise%22 result=%22theNoise%22%3E %3CfeFuncA type=%22table%22 tableValues=%220 0 0.5 0%22%3E%3C%2FfeFuncA%3E %3C%2FfeComponentTransfer%3E %3CfeBlend in=%22SourceGraphic%22 in2=%22theNoise%22 mode=%22soft-light%22 result=%22noisy-image%22 %2F%3E %3C%2Ffilter%3E %3CclipPath id=%22shape%22%3E %3Cpath fill=%22currentColor%22 d=%22M602.5%2C715Q252%2C930%2C270.5%2C532Q289%2C134%2C621%2C317Q953%2C500%2C602.5%2C715Z%22%3E%3C%2Fpath%3E %3C%2FclipPath%3E %3C%2Fdefs%3E %3Cg filter=%22url(%23grain)%22 clip-path=%22url(%23shape)%22%3E %3Cpath fill=%22%23a29bfe%22 d=%22M602.5%2C715Q252%2C930%2C270.5%2C532Q289%2C134%2C621%2C317Q953%2C500%2C602.5%2C715Z%22 %2F%3E %3C%2Fg%3E %3C%2Fsvg%3E");
       }
@@ -207,6 +209,7 @@ body {
     }
   }
 
+  // @section => facilities container
   .facilities__container {
     display: flex;
     background: #f3f3f5;
@@ -249,13 +252,17 @@ body {
       }
       p {
         font-size: 1.2rem;
+        margin-bottom: 10px;
       }
+
       button {
         background: orangered;
         border: none;
         color: #fff;
-        width: 7.8vw;
-        border-radius: 1.5vw;
+        width: auto;
+        max-width: 20vw;
+        border-radius: 10px;
+        padding: 10px 0;
         cursor: pointer;
         font-size: 1rem;
         @media (max-width: 425px) {
@@ -275,8 +282,6 @@ body {
       }
 
       div {
-        width: 15.2vh;
-        height: 7.8vh;
         cursor: pointer;
         display: flex;
         flex-direction: column;
@@ -284,16 +289,26 @@ body {
         justify-content: center;
         transition: all 0.3s ease-in-out;
         gap: 0.7vw;
+        padding: 25px 8px;
+        border-radius: 0.2vw;
+        border: 1px solid rgb(232, 232, 232);
+
+        p{
+          font-size: 15px;
+        }
+
         &:hover {
-          border: 2px solid orangered;
-          border-radius: 0.2vw;
+          border: 1px solid orangered;
         }
         .icon {
           color: orangered;
+          font-size: 30px;
         }
       }
     }
   }
+
+  // @section => testimonials container
   .Testimonials__container {
     // display: grid;
     // grid-template-columns: repeat(3, 1fr);
@@ -366,17 +381,22 @@ body {
     }
   }
 
+  // @section => about container
   .about_container {
     display: flex;
-    // gap: 140px;
     margin: 5.08vh 0;
     flex-wrap: wrap;
+    align-items: center;
+
+    .container__{
+      align-items: center;
+    }
 
     .image img {
       height: 60vh;
       width: 30vw;
       border-radius: 5px;
-      // object-fit: contain;
+      object-fit: cover;
       @media (max-width: 425px) {
         width: 100%;
       }
@@ -386,19 +406,22 @@ body {
       display: flex;
       flex-direction: column;
       gap: 10px;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
+
       h1 {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
         span {
           color: orangered;
         }
       }
+
       button {
+        margin-top: 10px;
         background: orangered;
-        border: none;
         color: #fff;
         width: 150px;
-        border-radius: 30px;
+        padding: 10px 0;
+        border-radius: 10px;
         cursor: pointer;
         font-size: 1rem;
       }
