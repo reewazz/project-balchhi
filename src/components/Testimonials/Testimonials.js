@@ -1,5 +1,4 @@
-import AOS from "aos";
-import React, { useEffect } from "react";
+import React from "react";
 import Testimonial from "./Testimonial";
 import gaire from "../../images/gaire.jpg";
 import laxman from "../../images/laxman.png";
@@ -10,12 +9,8 @@ import "swiper/scss";
 import "swiper/scss/pagination";
 
 function Testimonials() {
-  useEffect(() => {
-    AOS.init();
-  });
-
   return (
-    <div className="Testimonials__container" data-aos="zoom-in-up">
+    <div className="Testimonials__container" data-aos="fade-up">
       <div className="container_">
         <Swiper
           breakpoints={{

@@ -12,7 +12,6 @@ const Facilities = () => {
     <div className="facilities__container" id="facilities__container">
       <div className="container">
         <div className="about">
-          {/* <h3>Our <span className="span">Facilities</span> for you</h3> */}
           <Typography variant="h2" component={"h2"}>
             Our <span className="span">Facilities</span> for you
           </Typography>

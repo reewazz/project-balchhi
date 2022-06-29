@@ -9,10 +9,11 @@ import CloseIcon from "@mui/icons-material/Close";
 import MobileNavLinks from "./MobileNavLinks";
 
 export default function Navbar() {
+  // eslint-disable-next-line
   const [isopen, setIsopen] = React.useState(true);
   const [show, setShow] = React.useState(true);
   let scrollPosition = UpdateScrollPosition();
-  console.log(scrollPosition);
+  // console.log(scrollPosition);
 
   const media = useMediaQuery("(max-width:425px)");
 
@@ -37,6 +38,22 @@ export default function Navbar() {
                 <Link smooth={true} onClick={animateScroll.scrollToTop} to="">
                   <div className={scrollPosition < 627 ? "btn active" : "btn"}>
                     Home
+                  </div>
+                </Link>
+                <Link
+                  to="facilities__container"
+                  smooth={true}
+                  duration={1000}
+                  offset={-100}
+                >
+                  <div
+                    className={
+                      scrollPosition >= 627 && scrollPosition < 947
+                        ? "btn active"
+                        : "btn"
+                    }
+                  >
+                    Facilities
                   </div>
                 </Link>
                 <Link
