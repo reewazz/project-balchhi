@@ -13,15 +13,9 @@ function Testimonials() {
     <div className="Testimonials__container" data-aos="fade-up">
       <div className="container_">
         <Swiper
-          breakpoints={{
-            425: {
-              slidesPerView: 1,
-            },
-            768:{
-              slidesPerView:2
-            }
-          }}
-          slidesPerView={2}
+          slidesPerView={
+            window.innerWidth > 768 ? 2 : 1
+          }
           spaceBetween={5}
           pagination={{ clickable: true }}
           modules={[Pagination, Autoplay]}

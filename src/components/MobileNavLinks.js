@@ -9,7 +9,8 @@ function MobileNavLinks() {
           smooth={true}
           onClick={animateScroll.scrollToTop}
           className="link"
-          to=""        >
+          to=""
+        >
           Home
         </Link>
         <Link

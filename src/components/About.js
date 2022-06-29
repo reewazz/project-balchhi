@@ -10,7 +10,6 @@ export default function About() {
         <div
           className="image"
           data-aos={"fade-up"}
-          // data-aos-duration={900}
         >
           <img src={about} alt="balchhi_image" />
         </div>

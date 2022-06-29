@@ -20,7 +20,7 @@ function App() {
       <Hero />
       <Facilities />
       <About />
-      <Typography variant="h1" component={"h1"} style={{ textAlign: "center",fontSize:"3rem", marginTop: "60px", fontWeight: 600 }}>
+      <Typography variant="h1" component={"h1"} style={{ textAlign: "center",fontSize: window.innerWidth > 768 ? "3rem" : "2.7em", marginTop: "60px", fontWeight: 600, maxWidth: window.innerWidth > 768 ? "auto" : "80vw", margin: "0 auto" }}>
         What our <span style={{ color: "orangered" }}>Customer</span> say!
       </Typography>
       <Testimonials />
