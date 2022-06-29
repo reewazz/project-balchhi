@@ -23,10 +23,10 @@ function Testimonials() {
               slidesPerView: 1,
             },
             768:{
-              slidesPerView:2
+              slidesPerView:3
             }
           }}
-          slidesPerView={2}
+          slidesPerView={3}
           spaceBetween={5}
           pagination={{ clickable: true }}
           modules={[Pagination, Autoplay]}
