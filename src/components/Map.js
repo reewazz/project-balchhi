@@ -23,13 +23,14 @@ export default function Map() {
         <div className="map__content left">
           <div className="icons">
             <div className="grid_item">
+
               <i className="ri-map-pin-line"></i>
                 {" "}
                 <b>Address :</b>{" "}
               <span>
               </span>
-              <p>Tilottama -5 ,Manigram</p>
 
+              <p>Tilottama -5 ,Manigram</p>
             </div>
             <div className="grid_item">
               <i className="ri-phone-line"></i>
@@ -72,8 +73,10 @@ export default function Map() {
                 width="500"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.016934147103!2d83.47514371506024!3d27.623992182826473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399685151b893a11%3A0x17e1d6499ce964!2sBalchhi%20Resort%20And%20Agro%20Farm%20Pvt.%20Ltd.!5e0!3m2!1sen!2snp!4v1655878480303!5m2!1sen!2snp"
                 height="300"
+
                 style={{ border: "1px solid grey",borderRadius:"5px" }}
                 loading="lazy"                
+
               ></iframe>
             </div>
           </div>

@@ -21,6 +21,7 @@ function Hero() {
         <div className="about">
           <div className="blob animate__animated animate__pulse animate__infinite	infinite"></div>
           <div className="blob1 animate__animated animate__pulse animate__infinite	infinite"></div>
+
           <Typography variant="p" component={"p"}>
             Welcome to balchhi,
           </Typography>
@@ -41,7 +42,7 @@ function Hero() {
               target={"_blank"}
               rel="noreferrer"
             > */}
-            <PlayCircleIcon className="icon" style={{color:"orangered"}} />
+            <PlayCircleIcon className="icon" style={{ color: "orangered" }} />
             {/* </a> */}
             <Typography> Watch video</Typography>
           </button>
