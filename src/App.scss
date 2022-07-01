@@ -59,7 +59,7 @@ body {
     top: 0;
     z-index: 9;
     transition: all 0.3s ease-in-out;
-    
+
     &.shadow {
       background: rgba(255, 255, 255, 0.2);
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -130,7 +130,7 @@ body {
     background: transparent;
     margin: 30px 0;
 
-    @media (max-width:768px){
+    @media (max-width: 768px) {
       // margin-bottom: 50px;
     }
 
@@ -145,8 +145,15 @@ body {
         width: 100%;
       }
 
-      .greeting{
-        color: #FF4500;
+      .iframe {
+        @media (max-width: 425px) {
+          width: 90vw;
+          height: 80vh;
+        }
+      }
+
+      .greeting {
+        color: #ff4500;
         text-transform: uppercase;
         font-size: 18px;
         font-weight: 600;
@@ -203,12 +210,12 @@ body {
         font-size: 1rem;
         margin-top: 30px;
         font-weight: 600;
-        color: #FF4500;
+        color: #ff4500;
 
-          .icon {
-            font-size: 2.5rem;
-            color: orangered;
-          }
+        .icon {
+          font-size: 2.5rem;
+          color: orangered;
+        }
       }
     }
 
@@ -233,10 +240,10 @@ body {
     background: transparent;
 
     @media (max-width: 768px) {
-      &{
-       padding-top: 0; 
-       margin-top: 50px;
-       padding-bottom: 0;
+      & {
+        padding-top: 0;
+        margin-top: 50px;
+        padding-bottom: 0;
       }
 
       .container {
@@ -276,7 +283,7 @@ body {
         font-size: 1.3rem;
         margin-bottom: 10px;
 
-        @media (max-width:768px){
+        @media (max-width: 768px) {
           margin: 15px 0;
         }
       }
@@ -322,7 +329,7 @@ body {
         border-radius: 0.2vw;
         border: 1px solid rgb(232, 232, 232);
 
-        p{
+        p {
           font-size: 15px;
         }
 
@@ -349,8 +356,8 @@ body {
       margin: 40px auto;
       gap: 10px;
 
-      .swiper-pagination.swiper-pagination-horizontal.swiper-pagination-bullets{
-        display: none!important;
+      .swiper-pagination.swiper-pagination-horizontal.swiper-pagination-bullets {
+        display: none !important;
       }
 
       .testimonial {
@@ -420,10 +427,10 @@ body {
     margin: 50px 0;
     align-items: center;
 
-    .container__{
+    .container__ {
       align-items: center;
 
-      @media (max-width:768px){
+      @media (max-width: 768px) {
         flex-direction: column-reverse;
         gap: 45px;
       }
@@ -482,7 +489,7 @@ body {
     gap: 20px;
     padding: 30px 0;
 
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
       margin-top: 0;
       padding-top: 0;
       margin-bottom: 20px;
@@ -571,7 +578,7 @@ body {
     background: black;
     flex-direction: column;
 
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
       padding: 50px 0;
     }
 
@@ -580,6 +587,7 @@ body {
       width: 80vw;
       margin: auto;
       gap: 20px;
+      justify-content: space-around;
 
       @media (max-width: 768px) {
         flex-direction: column;
@@ -629,10 +637,9 @@ body {
             }
           }
         }
-       
       }
       .right {
-        ul{
+        ul {
           display: flex;
           flex-direction: column;
           gap: 10px;
@@ -644,19 +651,19 @@ body {
           display: flex;
           flex-direction: column;
           gap: 1vh;
-           margin: 5px 0;
+          margin: 5px 0;
         }
         .About {
           display: flex;
           flex-direction: column;
           gap: 1vh;
-           margin: 5px 0;
+          margin: 5px 0;
         }
         .Help {
           display: flex;
           flex-direction: column;
           gap: 1vh;
-           margin: 5px 0;
+          margin: 5px 0;
         }
         display: flex;
         gap: 2vw;
@@ -696,14 +703,14 @@ body {
     justify-content: space-between;
     flex-direction: column;
 
-    @media (max-width: 768px){
+    @media (max-width: 768px) {
       margin-bottom: 40px;
     }
 
     .content {
       display: flex;
       flex-direction: column;
-    
+
       h1 {
         font-size: 3.2rem;
         margin-bottom: 15px;
@@ -755,8 +762,8 @@ body {
           padding: 2vh 0;
           border-radius: 5px;
           margin-bottom: 10px;
-          
-          i{
+
+          i {
             font-size: 30px;
             margin-bottom: 10px;
           }
@@ -770,10 +777,10 @@ body {
             align-items: center;
             gap: 10px;
 
-            i{
+            i {
               margin-bottom: 0;
             }
-            
+
             a {
               text-decoration: none;
               color: #000;
@@ -834,6 +841,37 @@ body {
       width: 100vw;
       text-align: center;
       color: #000;
+    }
+  }
+}
+
+.notFound__container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 95vh;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-transform: capitalize;
+
+  h1{
+    font-size: 4rem;
+    color: orangered;
+  }
+  p{
+    font-size: 1.2rem;
+  }
+  button {
+    background-color: orangered;
+    color: white;
+    &:hover {
+      transform: scale(1.1);
+      background-color: orangered;
+      color: #fff;
+    }
+    &:active {
+      transform: scale(0.9);
     }
   }
 }

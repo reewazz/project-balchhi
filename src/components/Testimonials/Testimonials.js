@@ -16,18 +16,18 @@ function Testimonials() {
       <div className="container_">
         <Swiper
 
-          breakpoints={{
-            425: {
-              slidesPerView: 1,
-            },
-            768:{
-              slidesPerView:3
-            }
-          }}
+          // breakpoints={{
+          //   425: {
+          //     slidesPerView: 1,
+          //   },
+          //   768:{
+          //     slidesPerView:3
+          //   }
+          // }}
           
 
           slidesPerView={
-            window.innerWidth > 768 ? 2 : 1
+            window.innerWidth >= 768 ? 2 : 1
           }
 
           spaceBetween={5}

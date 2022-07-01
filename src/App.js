@@ -1,38 +1,12 @@
-import Hero from "./components/Hero";
-import Facilities from "./components/Facilities";
-import Navbar from "./components/Navbar";
+import { useRoutes } from "react-router-dom";
 import "./App.css";
-import About from "./components/About";
-import Testimonials from "./components/Testimonials/Testimonials";
-import Footer from "./components/Footer";
-import Gallery from "./components/Gallery";
-import Map from "./components/Map";
-import {ThemeProvider } from "@material-ui/core/styles";
-import Theme from "./Theme/Theme";
-import {Typography} from "@mui/material"
-import Memories from "./components/Memories";
+import Home from "./Pages/Home";
+import NotFound from "./Pages/NotFound";
 
-function App() {
-  // console.log(window.innerWidth)
-  return (
-    <>
-    <ThemeProvider theme={Theme}>
-      <Navbar />
-      <Hero />
-      <Memories/>
-      <Facilities />
-      <About />
-      <Typography variant="h1" component={"h1"} style={{ textAlign: "center",fontSize: window.innerWidth > 768 ? "3rem" : "2.7em", marginTop: "60px", fontWeight: 600, maxWidth: window.innerWidth > 768 ? "auto" : "80vw", margin: "0 auto" }}>
-        What our <span style={{ color: "orangered" }}>Customer</span> say!
-      </Typography>
-      <Testimonials />
-      <Gallery />
-      <Map />
-      <Footer />
-    </ThemeProvider>
-
-    </>
-  );
-}
+const App = () => useRoutes([
+  {path:"/",element:<Home />},
+  {path:"/home",element:<Home />},
+  {path:"*",element:<NotFound />}
+])
 
 export default App;
