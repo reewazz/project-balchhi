@@ -966,7 +966,7 @@ body .map_container .map {
 }
 
 .mobileNavContainer {
-  height: 90vh;
+  height: 50vh;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -975,8 +975,8 @@ body .map_container .map {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #fff;
-  color: #000;
+  /* Position and sizing of burger button */
+  /* Position and sizing of burger button */
 }
 .mobileNavContainer .mobileNav {
   display: -webkit-box;
@@ -989,18 +989,16 @@ body .map_container .map {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100vw;
-  height: 100vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   gap: 10px;
-  color: #000;
 }
 .mobileNavContainer .mobileNav .link {
-  width: 100vw;
-  text-align: center;
-  color: #000;
+  width: 100%;
+  padding: 5px 20px;
+  color: #fff;
+  text-align: left;
 }
 
 .notFound__container {
@@ -1042,4 +1040,77 @@ body .map_container .map {
 .notFound__container button:active {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+}
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+  background: orangered;
+  color: #fff;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  position: absolute;
+  top: 0;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  position: absolute;
+  top: 0;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
 }
