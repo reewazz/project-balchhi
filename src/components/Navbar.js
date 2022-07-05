@@ -3,30 +3,41 @@ import UpdateScrollPosition from "../Hooks/UpdateScrollPosition";
 import balchhiLogo from "../images/balchhiLogo.jpg";
 import { Link, animateScroll } from "react-scroll";
 import { useMediaQuery } from "@material-ui/core";
-import { motion } from "framer-motion";
-import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
-import MobileNavLinks from "./MobileNavLinks";
+import { slide as Menu } from "react-burger-menu";
 
 export default function Navbar() {
-  // eslint-disable-next-line
-  const [isopen, setIsopen] = React.useState(true);
-  const [show, setShow] = React.useState(true);
+  const [isopen, setIsopen] = React.useState(false);
+
+  const handleCloseMenu = () => {
+    setIsopen(false);
+  };
+
+  const handleStateChange = (state) => {
+    setIsopen(state.isOpen);
+  };
+
   let scrollPosition = UpdateScrollPosition();
   console.log(scrollPosition);
 
   const media = useMediaQuery("(max-width:425px)");
 
-  const variants = {
-    open: { opacity: 1, y: "10%" },
-    closed: { opacity: 0, y: 0 },
-  };
+  console.log(window.innerWidth);
 
   return (
     <>
-      <div className={scrollPosition > 27 ? "nav shadow" : "nav"}>
+      <div
+        className={
+          scrollPosition > 27  ? "nav shadow" : "nav"
+        }
+      >
         {!media ? (
-          <div className={scrollPosition > 27 ? "nav shadow" : "nav"}>
+          <div
+            className={
+              scrollPosition > 27 
+                ? "nav shadow"
+                : "nav"
+            }
+          >
             <div className="container">
               <div className="logo">
                 <a href="/">
@@ -56,7 +67,7 @@ export default function Navbar() {
                     Facilities
                   </div>
                 </Link>
-      
+
                 <Link
                   to="about__container"
                   smooth={true}
@@ -87,27 +98,81 @@ export default function Navbar() {
             </div>
           </div>
         ) : (
-          <motion.nav
-            animate={isopen ? "open" : "closed"}
-            variants={variants}
-            transition={{ duration: 0.5 }}
+          // <motion.nav
+          //   animate={isopen ? "open" : "closed"}
+          //   variants={variants}
+          //   transition={{ duration: 0.5 }}
+          // >
+          //   <motion.button
+          //     className="toggleBtn"
+          //     onClick={() => setShow((show) => !show)}
+          //     whileHover={{ scale: 1.1 }}
+          //     whileTap={{ scale: 0.9 }}
+          //   >
+          //     {show ? (
+          //       <MenuIcon
+          //         style={{ background: "transparent" }}
+          //         // onClick={handleClick}
+          //       />
+          //     ) : (
+          //       <CloseIcon style={{ background: "transparent" }} />
+          //     )}
+          //   </motion.button>
+          // </motion.nav>
+          <Menu
+            width={"100vw"}
+            height={"100vh"}
+            isOpen={isopen}
+            onStateChange={handleStateChange}
           >
-            <motion.button
-              className="toggleBtn"
-              onClick={() => setShow((show) => !show)}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              {show ? (
-                <MenuIcon style={{ background: "transparent" }} />
-              ) : (
-                <CloseIcon style={{ background: "transparent" }} />
-              )}
-            </motion.button>
-          </motion.nav>
+            <div className={"mobileNavContainer"}>
+              <div className="mobileNav">
+                <Link
+                  smooth={true}
+                  className="link"
+                  onClick={() => {
+                    handleCloseMenu();
+                    animateScroll.scrollToTop();
+                  }}
+                >
+                  Home
+                </Link>
+                <Link
+                  className="link"
+                  to="facilities__container"
+                  smooth={true}
+                  duration={1000}
+                  offset={-100}
+                  onClick={() => handleCloseMenu()}
+                >
+                  Service
+                </Link>
+                <Link
+                  to="about__container"
+                  smooth={true}
+                  duration={1000}
+                  offset={-150}
+                  className="link"
+                  onClick={() => handleCloseMenu()}
+                >
+                  About Us
+                </Link>
+                <Link
+                  to="map__container"
+                  smooth={true}
+                  duration={2000}
+                  className="link"
+                  onClick={() => handleCloseMenu()}
+                >
+                  Contact Us
+                </Link>
+              </div>
+            </div>
+          </Menu>
         )}
       </div>
-      <div>{!show && <MobileNavLinks animate />}</div>
+
+      {/* <div>{!show && <MobileNavLinks animate />}</div> */}
     </>
   );
 }

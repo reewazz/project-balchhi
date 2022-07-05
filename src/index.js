@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import AOS from "aos";
+import { BrowserRouter as Router } from "react-router-dom";
 import "animate.css";
 
 AOS.init();
@@ -11,7 +12,9 @@ AOS.init();
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </React.StrictMode>
 );
 

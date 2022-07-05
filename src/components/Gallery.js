@@ -26,7 +26,7 @@ function Gallery() {
       <div className="swiperContainer">
         <Swiper
           className="mySwiper"
-          slidesPerView={window.innerWidth > 992 ? 3 : 1}
+          slidesPerView={window.innerWidth >= 992 ? 3 : 1}
           spaceBetween={10}
           navigation={true}
           modules={[Navigation, EffectFade]}

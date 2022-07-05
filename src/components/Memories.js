@@ -11,7 +11,7 @@ import "swiper/scss/navigation";
 import "swiper/css/effect-fade";
 import { Typography } from "@mui/material";
 
-const images = [one,two,three,four];
+const images = [one, two, three, four];
 
 function Memories() {
   return (
@@ -26,18 +26,18 @@ function Memories() {
       </div>
       <div className="swiperContainer">
         <Swiper
-          breakpoints={{
-            425:{
-              slidesPerView:1,
-              spaceBetween:5
-            },
-            768:{
-              slidesPerView:3,
-              spaceBetween:10
-            }
-          }}
+          // breakpoints={{
+          //   425:{
+          //     slidesPerView:1,
+          //     spaceBetween:5
+          //   },
+          //   768:{
+          //     slidesPerView:3,
+          //     spaceBetween:10
+          //   }
+          // }}
           className="mySwiper"
-          slidesPerView={3}
+          slidesPerView={window.innerWidth >= 992 ? 3 : 1}
           spaceBetween={10}
           navigation={true}
           modules={[Navigation, EffectFade]}
@@ -53,7 +53,6 @@ function Memories() {
           })}
         </Swiper>
       </div>
-
     </div>
   );
 }

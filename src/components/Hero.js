@@ -6,7 +6,7 @@ import { Modal } from "@mui/material";
 
 function Hero() {
   const [open, setOpen] = React.useState(false);
-  
+
   const handleClick = () => {
     setOpen(true);
   };
@@ -26,7 +26,7 @@ function Hero() {
             Welcome to balchhi,
           </Typography>
           <Typography variant="h1" component={"h1"}>
-             Enjoy Your Vacation <br/> &amp; Remember Trips!
+            Enjoy Your Vacation <br /> &amp; Remember Trips!
           </Typography>
           <Typography component={"p"} variant="p">
             We connect like a family with best food.
@@ -41,20 +41,25 @@ function Hero() {
             onClose={handleClose}
             aria-labelledby="modal-modal-video"
           >
-            <iframe
-              src="https://www.youtube.com/embed/wTULrEWmNqs"
-              width={"1200px"}
-              height={"800px"}
-              style={{
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%,-50%)",
-              }}
-              id="modal-modal-video"
-              frameborder="0"
-              title="balchhi_video"
-            ></iframe>
+            <div className="iframe-wrapper">
+              <iframe
+                src="https://www.youtube.com/embed/wTULrEWmNqs"
+                width={"1200px"}
+                height={"800px"}
+                style={{
+                  position: "absolute",
+                  top: "50%",
+                  left: "50%",
+                  transform: "translate(-50%,-50%)",
+                }}
+                className="iframe"
+                id="modal-modal-video"
+                frameborder="0"
+                title="balchhi_video"
+                allowFullScreen
+                
+              ></iframe>
+            </div>
           </Modal>
         </div>
 

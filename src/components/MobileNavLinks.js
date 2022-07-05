@@ -1,10 +1,11 @@
 import React from "react";
 import { animateScroll, Link } from "react-scroll";
+// import {slide as Menu} from "react-burger-menu"
 
 function MobileNavLinks() {
   return (
-    <div className="mobileNavContainer">
-      <div className="mobileNav">
+    <div id="model-model-nav" className="mobileNavContainer">
+      <div className="mobileNav" width={"300px"} height={"400px"}>
         <Link
           smooth={true}
           onClick={animateScroll.scrollToTop}
